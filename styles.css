@@ -1867,6 +1867,66 @@ main span {
   .tech-marquee__track {
     animation-duration: 26s;
   }
+
+  .hero__card {
+    gap: 1rem;
+    padding: 1.6rem;
+  }
+
+  .portrait-ring {
+    width: 14rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.7rem, 10vw, 4.2rem);
+  }
+
+  .section h2,
+  .timeline__item h3,
+  .project h3,
+  .skills h3,
+  .contact h2,
+  .education h3 {
+    font-size: clamp(1.45rem, 4.2vw, 2rem);
+  }
+
+  .section {
+    margin-block: clamp(3rem, 6vw, 5rem);
+  }
+
+  .section__head {
+    margin-bottom: 1.2rem;
+  }
+
+  .lead {
+    line-height: 1.7;
+  }
+
+  .quickfacts {
+    gap: 0.65rem;
+    margin-top: 1.6rem;
+  }
+
+  .quickfacts div,
+  .statrow article {
+    padding: 0.95rem;
+  }
+
+  .project,
+  .education,
+  .skill-column,
+  .cert {
+    padding: 1rem;
+  }
+
+  .project__logo,
+  .education__logo,
+  .skill-column__icon,
+  .cert img {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
 }
 
 @media (max-width: 760px) {
@@ -1927,29 +1987,7 @@ main span {
   }
 
   .hero h1 {
-    font-size: clamp(3rem, 16vw, 4.4rem);
-  }
-
-  .section h2,
-  .timeline__item h3,
-  .project h3,
-  .skills h3,
-  .contact h2 {
-    font-size: 1.7rem;
-  }
-
-  .footer-cta h2 {
-    font-size: 2.2rem;
-    word-break: break-word;
-  }
-
-  .footer {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .hero h1 {
-    font-size: clamp(3rem, 16vw, 4.6rem);
+    font-size: clamp(2.5rem, 14vw, 3.7rem);
   }
 
   .hero__actions,
@@ -1966,6 +2004,29 @@ main span {
 
   .hero__title span:last-child {
     font-size: 0.76em;
+  }
+
+  .footer-cta h2 {
+    font-size: 2.05rem;
+    word-break: break-word;
+  }
+
+  .footer-cta__subtitle,
+  .footer-cta__eyebrow,
+  .footer-legal {
+    text-align: left;
+  }
+
+  .footer-cta,
+  .footer-cta__inner,
+  .contact {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .cert {
@@ -2013,6 +2074,15 @@ main span {
   .project__summary,
   .project__chips {
     grid-column: auto;
+  }
+
+  .education__competences {
+    font-size: 0.88rem;
+  }
+
+  .quickfacts div,
+  .statrow article {
+    border-radius: var(--radius-sm);
   }
 }
 
