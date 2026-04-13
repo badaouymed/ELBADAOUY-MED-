@@ -1,0 +1,265 @@
+{
+  "experiences": [
+    {
+      "id": "exp-1",
+      "delay": 100,
+      "alignment": "left",
+      "logo": "Img/Safran Logo.png",
+      "alt": "Safran Seats",
+      "meta": "Mars 2025 — Août 2025 · Issoudun, France",
+      "title": "Ingénieur Méthodes & Industrialisation",
+      "company": "Safran Seats · Issoudun",
+      "pill": "+30% remontées qualité",
+      "bullets": [
+        "Mise en place d’une solution d’équipement des îlots FAL en outillages dynamométriques.",
+        "Déploiement d’un système de suivi et gestion des outillages sur la ligne OneFAL.",
+        "Rédaction d’un cahier des charges pour la digitalisation du contrôle qualité.",
+        "Participation à un projet Green Belt (DMAIC)."
+      ],
+      "result": "Résultat: +30 % de remontées qualité (Pick-up)."
+    },
+    {
+      "id": "exp-2",
+      "delay": 200,
+      "alignment": "right",
+      "logo": "Img/Logo_Royal_Air_Maroc.svg",
+      "alt": "Royal Air Maroc",
+      "meta": "Fév. 2024 — Juin 2024 · Casablanca, Maroc",
+      "title": "Ingénieur Mécanique",
+      "company": "Royal Air Maroc · Direction Technique",
+      "pill": "Support technique flottes",
+      "bullets": [
+        "Définition des exigences constructeurs (AMM/SPM) pour plusieurs flottes.",
+        "Étude de transfert d’activité pour le traitement corrosion jantes et freins.",
+        "Rédaction de cahiers des charges techniques conformes aux standards aéronautiques."
+      ],
+      "result": "Résultat: processus structuré selon les exigences constructeurs et réglementaires."
+    },
+    {
+      "id": "exp-3",
+      "delay": 300,
+      "alignment": "left",
+      "badge": "3D",
+      "meta": "Jan. 2023 — Sept. 2023 · Maroc",
+      "title": "Consultant en Robotique & Conception",
+      "company": "3D Building Morocco · Start-up",
+      "pill": "Prototype fonctionnel",
+      "bullets": [
+        "Analyse cinématique d’un bras manipulateur 3 axes.",
+        "Conception et modélisation 3D sous CATIA V5 / 3DEXPERIENCE.",
+        "Rédaction de cahiers des charges et participation aux revues de conception."
+      ],
+      "result": "Résultat: prototype fonctionnel de bras manipulateur."
+    },
+    {
+      "id": "exp-4",
+      "delay": 400,
+      "alignment": "right",
+      "logo": "Img/Capgemini_Logo.svg",
+      "alt": "Capgemini Engineering",
+      "meta": "Mai 2021 — Juil. 2021 · Projet académique",
+      "title": "Projet de fin d’études · Ingénieur mécanique",
+      "company": "Capgemini Engineering",
+      "pill": "Prototype validé mécaniquement",
+      "bullets": [
+        "Conception et dimensionnement d’un support filtre carburant.",
+        "Analyse fonctionnelle et sélection de solution optimale.",
+        "Validation mécanique via CES EduPack et prototypage (impression 3D + Arduino)."
+      ],
+      "result": "Résultat: prototype validé mécaniquement et fonctionnel."
+    }
+  ],
+  "education": [
+    {
+      "delay": 100,
+      "alignment": "left",
+      "logo": "Img/logo ensam .png",
+      "alt": "Logo ENSAM",
+      "title": "Ingénierie mécanique",
+      "school": "ENSAM",
+      "detail": "Formation d’ingénieur avec spécialisation mécanique, méthodes et industrialisation."
+    },
+    {
+      "delay": 200,
+      "alignment": "right",
+      "logo": "Img/logo univérsité parsi saclay.png",
+      "alt": "Logo Université Paris-Saclay",
+      "title": "Université Paris-Saclay",
+      "school": "Paris-Saclay",
+      "detail": "Complément académique orienté systèmes complexes et approche scientifique appliquée."
+    }
+  ],
+  "projects": [
+    {
+      "delay": 100,
+      "alignment": "left",
+      "accent": true,
+      "tag": "Robotique industrielle",
+      "title": "Bras manipulateur robotique",
+      "intro": "Projet en startup orienté robotique industrielle.",
+      "bullets": ["Analyse cinématique", "Modélisation 3D", "Choix techniques"],
+      "outro": "Prototype fonctionnel opérationnel, modélisé sous CATIA V5 et 3DEXPERIENCE.",
+      "link": "#contact"
+    },
+    {
+      "delay": 200,
+      "alignment": "up",
+      "accent": false,
+      "tag": "Aéronautique",
+      "title": "Digitalisation du contrôle qualité",
+      "intro": "Optimisation des processus sur ligne d’assemblage aéronautique chez Safran.",
+      "bullets": ["Cahier des charges", "Analyse terrain", "Processus digital"],
+      "outro": "Amélioration du suivi qualité et des remontées terrain.",
+      "link": "#contact"
+    },
+    {
+      "delay": 300,
+      "alignment": "right",
+      "accent": false,
+      "tag": "Conception mécanique",
+      "title": "Support filtre carburant",
+      "intro": "Projet d’ingénierie mécanique avec dimensionnement, sélection de solution et validation technique.",
+      "bullets": ["RDM", "CES EduPack", "Impression 3D"],
+      "outro": "Solution validée mécaniquement et prototype fonctionnel.",
+      "link": "#contact"
+    }
+  ],
+  "skills": [
+    {
+      "delay": 100,
+      "alignment": "left",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"skill-column__icon\"><path d=\"m21 16-9 5-9-5V8l9-5 9 5Z\"/><path d=\"m3.27 6.96 8.73 5.05 8.73-5.05\"/><path d=\"M12 22V12\"/></svg>",
+      "eyebrow": "Domaine",
+      "title": "Conception Mécanique & Simulation",
+      "tags": ["CATIA V5", "SolidWorks", "3DEXPERIENCE", "RDM", "Optimisation topologique", "Composites", "ANSYS", "ABAQUS", "ANSYS ACP", "Statique & Dynamique"]
+    },
+    {
+      "delay": 200,
+      "alignment": "up",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"skill-column__icon\"><path d=\"M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z\"/><path d=\"M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9c.26-.54.83-.93 1.51-1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09c-.68 0-1.25.39-1.51 1Z\"/></svg>",
+      "eyebrow": "Expertise",
+      "title": "Industrialisation & Méthodes",
+      "tags": ["AMDEC", "DMAIC", "Lean", "5S", "Gammes de fabrication", "Modes opératoires", "Dossiers industriels", "QRQC", "8D", "Ishikawa", "5 Pourquoi", "Revues de conception", "mBOM"]
+    },
+    {
+      "delay": 300,
+      "alignment": "right",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"skill-column__icon\"><polygon points=\"12 2 2 7 12 12 22 7 12 2\"/><polyline points=\"2 12 12 17 22 12\"/><polyline points=\"2 17 12 22 22 17\"/></svg>",
+      "eyebrow": "Atelier & Process",
+      "title": "Procédés de Fabrication",
+      "tags": ["Fabrication additive (FDM/SLA)", "Prototypage rapide", "Usinage CNC", "Assemblage aéronautique"]
+    },
+    {
+      "delay": 400,
+      "alignment": "left",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"skill-column__icon\"><path d=\"M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.2-1.1.7l-1 2.5 7.5 4.5-4 4-2.8-.7c-.3 0-.6.2-.7.5l-1 1.5 5 1.5 1.5 5 1.5-1.1c.3-.2.5-.5.5-.8l-.7-2.8 4-4 4.5 7.5 2.5-1c.5-.2.8-.6.7-1.1z\"/></svg>",
+      "eyebrow": "Normes & Docs",
+      "title": "Aéronautique & Navigabilité",
+      "tags": ["EASA Part 21", "Part 145", "FAA FAR", "CS-25", "ETSO", "AS", "Documentation AMM / SPM"]
+    }
+  ],
+  "certifications": [
+    {
+      "delay": 100,
+      "alignment": "left",
+      "img": "Img/Solidwoks Expert.png",
+      "alt": "SOLIDWORKS Expert",
+      "title": "SOLIDWORKS Expert",
+      "status": "En cours",
+      "inProgress": true,
+      "progressValue": 60,
+      "desc": "Certification actuellement en cours de progression sur LinkedIn.",
+      "link": "https://www.linkedin.com/"
+    },
+    {
+      "delay": 200,
+      "alignment": "up",
+      "img": "Img/SOLIDWORKS DESIGN - PROFESSIONAL.png",
+      "alt": "SOLIDWORKS Design Professional",
+      "title": "SOLIDWORKS Design Professional",
+      "status": "Certifié",
+      "desc": "Conception avancée et modélisation 3D.",
+      "link": "https://www.linkedin.com/"
+    },
+    {
+      "delay": 100,
+      "alignment": "right",
+      "img": "Img/SOLIDWORKS DESIGN - ASSOCIATE.png",
+      "alt": "SOLIDWORKS Design Associate",
+      "title": "SOLIDWORKS Design Associate",
+      "status": "Certifié",
+      "desc": "Fondamentaux de la conception mécanique.",
+      "link": "https://www.linkedin.com/"
+    },
+    {
+      "delay": 200,
+      "alignment": "left",
+      "img": "Img/SOLIDWORKS Champion .png",
+      "alt": "SOLIDWORKS Champion",
+      "title": "SOLIDWORKS Champion",
+      "status": "Certifié",
+      "desc": "Reconnaissance liée à l’expertise logicielle.",
+      "link": "https://www.linkedin.com/"
+    },
+    {
+      "delay": 100,
+      "alignment": "up",
+      "img": "Img/PROFESSIONAL - WELDMENTS.png",
+      "alt": "SOLIDWORKS Weldments Professional",
+      "title": "Weldments Professional",
+      "status": "Certifié",
+      "desc": "Structures soudées et conception associée.",
+      "link": "https://www.linkedin.com/"
+    },
+    {
+      "delay": 200,
+      "alignment": "right",
+      "img": "Img/PROFESSIONAL - SURFACING.png",
+      "alt": "SOLIDWORKS Surfacing Professional",
+      "title": "Surfacing Professional",
+      "status": "Certifié",
+      "desc": "Surfaces complexes et modélisation avancée.",
+      "link": "https://www.linkedin.com/"
+    },
+    {
+      "delay": 100,
+      "alignment": "left",
+      "img": "Img/PROFESSIONAL - SHEET METAL.png",
+      "alt": "SOLIDWORKS Sheet Metal Professional",
+      "title": "Sheet Metal Professional",
+      "status": "Certifié",
+      "desc": "Conception en tôlerie et mise en plan.",
+      "link": "https://www.linkedin.com/"
+    },
+    {
+      "delay": 200,
+      "alignment": "up",
+      "img": "Img/PROFESSIONAL - DRAWING TOOLS.png",
+      "alt": "SOLIDWORKS Drawing Tools Professional",
+      "title": "Drawing Tools Professional",
+      "status": "Certifié",
+      "desc": "Outils de mise en plan et documentation technique.",
+      "link": "https://www.linkedin.com/"
+    },
+    {
+      "delay": 100,
+      "alignment": "right",
+      "img": "Img/ANSYS_logo.png",
+      "alt": "ANSYS",
+      "title": "ANSYS",
+      "status": "Certifié",
+      "desc": "Simulation et validation numérique.",
+      "link": "https://www.linkedin.com/"
+    },
+    {
+      "delay": 200,
+      "alignment": "left",
+      "img": "Img/DS-CATIA-Logo.png",
+      "alt": "CATIA",
+      "title": "CATIA",
+      "status": "Certifié",
+      "desc": "Modélisation et conception 3D.",
+      "link": "https://www.linkedin.com/"
+    }
+  ]
+}
