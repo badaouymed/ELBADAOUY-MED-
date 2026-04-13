@@ -73,20 +73,42 @@
     {
       "delay": 100,
       "alignment": "left",
-      "logo": "Img/logo%20ensam%20.png",
-      "alt": "Logo ENSAM",
-      "title": "Ingénierie mécanique",
-      "school": "ENSAM",
-      "detail": "Formation d’ingénieur avec spécialisation mécanique, méthodes et industrialisation."
+      "logo": "Img/logo%20univ%C3%A9rsit%C3%A9%20parsi%20saclay.png",
+      "alt": "Université Paris-Saclay",
+      "title": "Master 2 (M2), Industrie Aéronautique Navigabilité",
+      "school": "Université Paris-Saclay",
+      "date": "sept. 2024 — juin 2025",
+      "skills": ["Aéronautique", "Conception assistée par ordinateur (CAO)", "Navigabilité"]
     },
     {
       "delay": 200,
       "alignment": "right",
-      "logo": "Img/logo%20univ%C3%A9rsit%C3%A9%20parsi%20saclay.png",
-      "alt": "Logo Université Paris-Saclay",
-      "title": "Université Paris-Saclay",
-      "school": "Paris-Saclay",
-      "detail": "Complément académique orienté systèmes complexes et approche scientifique appliquée."
+      "logo": "Img/logo%20ensam%20.png",
+      "alt": "ENSAM Rabat",
+      "title": "Diplôme d'ingénieur, Ingénierie Mécanique pour l'Industrie Aéronautique",
+      "school": "ENSAM Rabat",
+      "date": "sept. 2021 — juin 2024",
+      "skills": ["Calcul de structures", "ANSYS", "Méthodes"]
+    },
+    {
+      "delay": 300,
+      "alignment": "left",
+      "logo": "Img/fsts%20logo.png",
+      "alt": "FST Settat",
+      "title": "Licence Science et technique : Génie Mécanique",
+      "school": "FST Settat",
+      "date": "2020 — 2021",
+      "skills": ["Conception assistée par ordinateur (CAO)"]
+    },
+    {
+      "delay": 400,
+      "alignment": "right",
+      "logo": "Img/fsts%20logo.png",
+      "alt": "FST Settat",
+      "title": "DEUST : Génie électrique et mécanique",
+      "school": "FST Settat",
+      "date": "2018 — 2020",
+      "skills": ["Conception assistée par ordinateur (CAO)"]
     }
   ],
   "projects": [
