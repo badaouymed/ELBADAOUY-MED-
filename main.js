@@ -182,16 +182,24 @@ function buildHTML(data) {
   if (eduContainer && data.education) {
     let eduHTML = "";
     data.education.forEach(edu => {
+      let metaHTML = (edu.date || edu.location) ? `<p class="timeline__meta">${edu.date || ''}${edu.date && edu.location ? ' · ' : ''}${edu.location || ''}</p>` : '';
+      let skillsHTML = edu.skills ? `
+        <div class="education__skills">
+          ${edu.skills.map(s => `<span class="skill-tag skill-tag--small">${s}</span>`).join("")}
+        </div>` : '';
+        
       eduHTML += `
         <article class="education panel fade-${edu.alignment}" data-delay="${edu.delay}">
           <div class="education__top">
             <img class="education__logo" loading="lazy" src="${edu.logo}" alt="${edu.alt}" />
             <div>
+              ${metaHTML}
               <h3>${edu.title}</h3>
               <p class="education__school">${edu.school}</p>
             </div>
           </div>
-          <p class="education__detail">${edu.detail}</p>
+          ${edu.detail ? `<p class="education__detail">${edu.detail}</p>` : ''}
+          ${skillsHTML}
         </article>`;
     });
     eduContainer.innerHTML = eduHTML;
