@@ -12,7 +12,7 @@
       "pill": "+30% remontées qualité",
       "bullets": [
         "Mise en place d’une solution d’équipement des îlots FAL en outillages dynamométriques.",
-        "Déploiement d’un système de suivi et gestion des outillages sur la ligne OneFAL.",
+        "Déploiement d’un système de suivi et de gestion des outillages sur la ligne OneFAL.",
         "Rédaction d’un cahier des charges pour la digitalisation du contrôle qualité.",
         "Participation à un projet Green Belt (DMAIC)."
       ],
@@ -30,7 +30,7 @@
       "pill": "Support technique flottes",
       "bullets": [
         "Définition des exigences constructeurs (AMM/SPM) pour plusieurs flottes.",
-        "Étude de transfert d’activité pour le traitement corrosion jantes et freins.",
+        "Étude de transfert d’activité pour le traitement de corrosion des jantes et des freins.",
         "Rédaction de cahiers des charges techniques conformes aux standards aéronautiques."
       ],
       "result": "Résultat: processus structuré selon les exigences constructeurs et réglementaires."
@@ -85,7 +85,7 @@
       "alignment": "right",
       "logo": "Img/logo%20ensam%20.png",
       "alt": "ENSAM Rabat",
-      "title": "Diplôme d'ingénieur, Ingénierie Mécanique pour l'Industrie Aéronautique",
+      "title": "Diplôme d'ingénieur, Ingénierie mécanique pour l'industrie aéronautique",
       "school": "ENSAM Rabat",
       "date": "sept. 2021 — juin 2024",
       "competences": ["Calcul de structures", "ANSYS", "Méthodes", "Conception mécanique"]
@@ -95,7 +95,7 @@
       "alignment": "left",
       "logo": "Img/fsts%20logo.png",
       "alt": "FST Settat",
-      "title": "Licence Science et technique : Génie Mécanique",
+      "title": "Licence Science et technique : Génie mécanique",
       "school": "FST Settat",
       "date": "2020 — 2021",
       "competences": ["Conception assistée par ordinateur (CAO)"]
@@ -118,7 +118,7 @@
       "logo": "Img/logo%20ensam%20.png",
       "institution": "ENSAM Rabat",
       "period": "avr. 2022 — mai 2022",
-      "title": "Etude numérique de flexion des poutres composites en I",
+      "title": "Étude numérique de flexion des poutres composites en I",
       "intro": "Étude numérique de la flexion des poutres composites en I.",
       "outro": "Conception et validation numérique d’une structure composite en I.",
       "competences": ["CATIA", "Calcul de structures", "Simulation", "Mécanique des matériaux"]
@@ -140,7 +140,7 @@
       "logo": "Img/logo%20ensam%20.png",
       "institution": "ENSAM Rabat",
       "period": "fév. 2022 — juin 2022",
-      "title": "Etude, Conception et Réalisation d’un Accessoire de Fixation pour Tour Parallèle",
+      "title": "Étude, conception et réalisation d’un accessoire de fixation pour tour parallèle",
       "intro": "Étude, conception et réalisation d’un accessoire de fixation pour tour parallèle.",
       "outro": "Conception CAO, réalisation et mise au point du dispositif.",
       "competences": ["Conception assistée par ordinateur (CAO)", "Réalisation", "Usinage", "Prototypage"]
@@ -151,7 +151,7 @@
       "logo": "Img/fsts%20logo.png",
       "institution": "FST Settat",
       "period": "mars 2021 — mars 2021",
-      "title": "Etude, Conception, et Automatisation d'un broyeur d'huile Traditionnelle",
+      "title": "Étude, conception et automatisation d'un broyeur d'huile traditionnelle",
       "intro": "Étude, conception et automatisation d’un broyeur d’huile traditionnelle.",
       "outro": "Intégration d’une approche mécanique et automatisée sur prototype.",
       "competences": ["Conception assistée par ordinateur (CAO)", "Automatisation", "SolidWorks", "Arduino"]
