@@ -4,7 +4,7 @@
       "id": "exp-1",
       "delay": 100,
       "alignment": "left",
-      "logo": "Img/Safran Logo.png",
+      "logo": "Img/Safran%20Logo.png",
       "alt": "Safran Seats",
       "meta": "Mars 2025 — Août 2025 · Issoudun, France",
       "title": "Ingénieur Méthodes & Industrialisation",
@@ -73,7 +73,7 @@
     {
       "delay": 100,
       "alignment": "left",
-      "logo": "Img/logo ensam .png",
+      "logo": "Img/logo%20ensam%20.png",
       "alt": "Logo ENSAM",
       "title": "Ingénierie mécanique",
       "school": "ENSAM",
@@ -82,7 +82,7 @@
     {
       "delay": 200,
       "alignment": "right",
-      "logo": "Img/logo univérsité parsi saclay.png",
+      "logo": "Img/logo%20univ%C3%A9rsit%C3%A9%20parsi%20saclay.png",
       "alt": "Logo Université Paris-Saclay",
       "title": "Université Paris-Saclay",
       "school": "Paris-Saclay",
@@ -162,7 +162,7 @@
     {
       "delay": 100,
       "alignment": "left",
-      "img": "Img/Solidwoks Expert.png",
+      "img": "Img/Solidwoks%20Expert.png",
       "alt": "SOLIDWORKS Expert",
       "title": "SOLIDWORKS Expert",
       "status": "En cours",
@@ -174,7 +174,7 @@
     {
       "delay": 200,
       "alignment": "up",
-      "img": "Img/SOLIDWORKS DESIGN - PROFESSIONAL.png",
+      "img": "Img/SOLIDWORKS%20DESIGN%20-%20PROFESSIONAL.png",
       "alt": "SOLIDWORKS Design Professional",
       "title": "SOLIDWORKS Design Professional",
       "status": "Certifié",
@@ -184,7 +184,7 @@
     {
       "delay": 100,
       "alignment": "right",
-      "img": "Img/SOLIDWORKS DESIGN - ASSOCIATE.png",
+      "img": "Img/SOLIDWORKS%20DESIGN%20-%20ASSOCIATE.png",
       "alt": "SOLIDWORKS Design Associate",
       "title": "SOLIDWORKS Design Associate",
       "status": "Certifié",
@@ -194,7 +194,7 @@
     {
       "delay": 200,
       "alignment": "left",
-      "img": "Img/SOLIDWORKS Champion .png",
+      "img": "Img/SOLIDWORKS%20Champion%20.png",
       "alt": "SOLIDWORKS Champion",
       "title": "SOLIDWORKS Champion",
       "status": "Certifié",
@@ -204,7 +204,7 @@
     {
       "delay": 100,
       "alignment": "up",
-      "img": "Img/PROFESSIONAL - WELDMENTS.png",
+      "img": "Img/PROFESSIONAL%20-%20WELDMENTS.png",
       "alt": "SOLIDWORKS Weldments Professional",
       "title": "Weldments Professional",
       "status": "Certifié",
@@ -214,7 +214,7 @@
     {
       "delay": 200,
       "alignment": "right",
-      "img": "Img/PROFESSIONAL - SURFACING.png",
+      "img": "Img/PROFESSIONAL%20-%20SURFACING.png",
       "alt": "SOLIDWORKS Surfacing Professional",
       "title": "Surfacing Professional",
       "status": "Certifié",
@@ -224,7 +224,7 @@
     {
       "delay": 100,
       "alignment": "left",
-      "img": "Img/PROFESSIONAL - SHEET METAL.png",
+      "img": "Img/PROFESSIONAL%20-%20SHEET%20METAL.png",
       "alt": "SOLIDWORKS Sheet Metal Professional",
       "title": "Sheet Metal Professional",
       "status": "Certifié",
@@ -234,7 +234,7 @@
     {
       "delay": 200,
       "alignment": "up",
-      "img": "Img/PROFESSIONAL - DRAWING TOOLS.png",
+      "img": "Img/PROFESSIONAL%20-%20DRAWING%20TOOLS.png",
       "alt": "SOLIDWORKS Drawing Tools Professional",
       "title": "Drawing Tools Professional",
       "status": "Certifié",
