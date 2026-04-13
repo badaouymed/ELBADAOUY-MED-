@@ -58,6 +58,18 @@ function animateCounter(element, target, duration) {
   requestAnimationFrame(step);
 }
 
+function formatCompetences(competences) {
+  if (!Array.isArray(competences) || competences.length === 0) {
+    return "";
+  }
+
+  const visibleCompetences = competences.slice(0, 2);
+  const remainingCount = competences.length - visibleCompetences.length;
+  const remainingText = remainingCount > 0 ? `, +${remainingCount} compétence${remainingCount > 1 ? "s" : ""}` : "";
+
+  return `${visibleCompetences.join(", ")}${remainingText}`;
+}
+
 function observeElements() {
   const targets = Array.from(animationTargets);
 
@@ -182,24 +194,20 @@ function buildHTML(data) {
   if (eduContainer && data.education) {
     let eduHTML = "";
     data.education.forEach(edu => {
-      let metaHTML = (edu.date || edu.location) ? `<p class="timeline__meta">${edu.date || ''}${edu.date && edu.location ? ' · ' : ''}${edu.location || ''}</p>` : '';
-      let skillsHTML = edu.skills ? `
-        <div class="education__skills">
-          ${edu.skills.map(s => `<span class="skill-tag skill-tag--small">${s}</span>`).join("")}
-        </div>` : '';
+      const metaHTML = (edu.date || edu.location) ? `<p class="education__meta">${edu.date || ''}${edu.date && edu.location ? ' · ' : ''}${edu.location || ''}</p>` : '';
+      const competencesHTML = edu.competences ? `<p class="education__competences"><strong>Compétences :</strong> ${formatCompetences(edu.competences)}</p>` : '';
         
       eduHTML += `
-        <article class="education panel fade-${edu.alignment}" data-delay="${edu.delay}">
+        <article class="education fade-${edu.alignment}" data-delay="${edu.delay}">
           <div class="education__top">
             <img class="education__logo" loading="lazy" src="${edu.logo}" alt="${edu.alt}" />
-            <div>
-              ${metaHTML}
-              <h3>${edu.title}</h3>
+            <div class="education__copy">
               <p class="education__school">${edu.school}</p>
+              <h3>${edu.title}</h3>
+              ${metaHTML}
+              ${competencesHTML}
             </div>
           </div>
-          ${edu.detail ? `<p class="education__detail">${edu.detail}</p>` : ''}
-          ${skillsHTML}
         </article>`;
     });
     eduContainer.innerHTML = eduHTML;
@@ -209,21 +217,29 @@ function buildHTML(data) {
   const projContainer = document.getElementById("projects-container");
   if (projContainer && data.projects) {
     let projHTML = "";
+
     data.projects.forEach(proj => {
+      const competencesList = Array.isArray(proj.competences) ? proj.competences.slice(0, 4) : [];
+      const logoMarkup = (proj.logo && proj.logo.endsWith(".png")) || (proj.logo && proj.logo.endsWith(".svg"))
+        ? `<img class="project__logo-img" loading="lazy" src="${proj.logo}" alt="${proj.institution || proj.title}" />`
+        : `<span>${proj.logo || "PR"}</span>`;
+
       projHTML += `
-        <article class="project panel ${proj.accent ? 'panel--accent' : ''} fade-${proj.alignment}" data-delay="${proj.delay}">
-          <p class="project__tag">${proj.tag}</p>
-          <h3>${proj.title}</h3>
-          <p>${proj.intro}</p>
-          <ul>
-            ${proj.bullets.map(b => `<li>${b}</li>`).join("")}
-          </ul>
-          <p>${proj.outro}</p>
-          <div class="project__actions">
-            <a class="button button--secondary" href="${proj.link}">Voir le projet</a>
+        <article class="project project--list fade-${proj.alignment}" data-delay="${proj.delay}">
+          <div class="project__top">
+            <div class="project__logo" aria-hidden="true">${logoMarkup}</div>
+            <div class="project__heading">
+              <h3>${proj.title}</h3>
+              <p class="project__meta">${proj.period}${proj.institution ? ` · ${proj.institution}` : ""}</p>
+            </div>
+          </div>
+          <p class="project__summary">${proj.intro || proj.outro || ""}</p>
+          <div class="project__chips" aria-label="Compétences">
+            ${competencesList.map((item) => `<span class="project-chip">${item}</span>`).join("")}
           </div>
         </article>`;
     });
+
     projContainer.innerHTML = projHTML;
   }
 

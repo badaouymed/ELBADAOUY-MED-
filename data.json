@@ -78,7 +78,7 @@
       "title": "Master 2 (M2), Industrie Aéronautique Navigabilité",
       "school": "Université Paris-Saclay",
       "date": "sept. 2024 — juin 2025",
-      "skills": ["Aéronautique", "Conception assistée par ordinateur (CAO)", "Navigabilité"]
+      "competences": ["Aéronautique", "Conception assistée par ordinateur (CAO)", "Navigabilité"]
     },
     {
       "delay": 200,
@@ -88,7 +88,7 @@
       "title": "Diplôme d'ingénieur, Ingénierie Mécanique pour l'Industrie Aéronautique",
       "school": "ENSAM Rabat",
       "date": "sept. 2021 — juin 2024",
-      "skills": ["Calcul de structures", "ANSYS", "Méthodes"]
+      "competences": ["Calcul de structures", "ANSYS", "Méthodes", "Conception mécanique"]
     },
     {
       "delay": 300,
@@ -98,52 +98,74 @@
       "title": "Licence Science et technique : Génie Mécanique",
       "school": "FST Settat",
       "date": "2020 — 2021",
-      "skills": ["Conception assistée par ordinateur (CAO)"]
+      "competences": ["Conception assistée par ordinateur (CAO)"]
     },
     {
       "delay": 400,
       "alignment": "right",
       "logo": "Img/fsts%20logo.png",
       "alt": "FST Settat",
-      "title": "DEUST : Génie électrique et mécanique",
+      "title": "Diplôme d'études universitaires scientifiques et techniques, Génie électrique - Génie mécanique",
       "school": "FST Settat",
       "date": "2018 — 2020",
-      "skills": ["Conception assistée par ordinateur (CAO)"]
+      "competences": ["Conception assistée par ordinateur (CAO)"]
     }
   ],
   "projects": [
     {
       "delay": 100,
       "alignment": "left",
-      "accent": true,
-      "tag": "Robotique industrielle",
-      "title": "Bras manipulateur robotique",
-      "intro": "Projet en startup orienté robotique industrielle.",
-      "bullets": ["Analyse cinématique", "Modélisation 3D", "Choix techniques"],
-      "outro": "Prototype fonctionnel opérationnel, modélisé sous CATIA V5 et 3DEXPERIENCE.",
-      "link": "#contact"
+      "logo": "Img/logo%20ensam%20.png",
+      "institution": "ENSAM Rabat",
+      "period": "avr. 2022 — mai 2022",
+      "title": "Etude numérique de flexion des poutres composites en I",
+      "intro": "Étude numérique de la flexion des poutres composites en I.",
+      "outro": "Conception et validation numérique d’une structure composite en I.",
+      "competences": ["CATIA", "Calcul de structures", "Simulation", "Mécanique des matériaux"]
     },
     {
       "delay": 200,
       "alignment": "up",
-      "accent": false,
-      "tag": "Aéronautique",
-      "title": "Digitalisation du contrôle qualité",
-      "intro": "Optimisation des processus sur ligne d’assemblage aéronautique chez Safran.",
-      "bullets": ["Cahier des charges", "Analyse terrain", "Processus digital"],
-      "outro": "Amélioration du suivi qualité et des remontées terrain.",
-      "link": "#contact"
+      "logo": "Img/logo%20ensam%20.png",
+      "institution": "ENSAM Rabat",
+      "period": "jan. 2023 — juil. 2023",
+      "title": "Conception, modélisation et simulation des différents composants d’avion",
+      "intro": "Conception, modélisation et simulation des différents composants d’avion.",
+      "outro": "Travail de modélisation et de simulation de composants aéronautiques.",
+      "competences": ["CATIA", "CAO", "Simulation", "Analyse structurelle"]
     },
     {
       "delay": 300,
       "alignment": "right",
-      "accent": false,
-      "tag": "Conception mécanique",
-      "title": "Support filtre carburant",
-      "intro": "Projet d’ingénierie mécanique avec dimensionnement, sélection de solution et validation technique.",
-      "bullets": ["RDM", "CES EduPack", "Impression 3D"],
-      "outro": "Solution validée mécaniquement et prototype fonctionnel.",
-      "link": "#contact"
+      "logo": "Img/logo%20ensam%20.png",
+      "institution": "ENSAM Rabat",
+      "period": "fév. 2022 — juin 2022",
+      "title": "Etude, Conception et Réalisation d’un Accessoire de Fixation pour Tour Parallèle",
+      "intro": "Étude, conception et réalisation d’un accessoire de fixation pour tour parallèle.",
+      "outro": "Conception CAO, réalisation et mise au point du dispositif.",
+      "competences": ["Conception assistée par ordinateur (CAO)", "Réalisation", "Usinage", "Prototypage"]
+    },
+    {
+      "delay": 400,
+      "alignment": "left",
+      "logo": "Img/fsts%20logo.png",
+      "institution": "FST Settat",
+      "period": "mars 2021 — mars 2021",
+      "title": "Etude, Conception, et Automatisation d'un broyeur d'huile Traditionnelle",
+      "intro": "Étude, conception et automatisation d’un broyeur d’huile traditionnelle.",
+      "outro": "Intégration d’une approche mécanique et automatisée sur prototype.",
+      "competences": ["Conception assistée par ordinateur (CAO)", "Automatisation", "SolidWorks", "Arduino"]
+    },
+    {
+      "delay": 500,
+      "alignment": "right",
+      "logo": "Img/fsts%20logo.png",
+      "institution": "FST Settat",
+      "period": "fév. 2021 — mai 2021",
+      "title": "Feu Rouge",
+      "intro": "Projet de feu rouge automatique basé sur une logique embarquée.",
+      "outro": "Conception d’un système simple de signalisation et d’automatisation.",
+      "competences": ["Conception assistée par ordinateur (CAO)", "Électronique", "Automatisation"]
     }
   ],
   "skills": [
