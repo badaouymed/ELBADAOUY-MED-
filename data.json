@@ -121,7 +121,8 @@
       "title": "Étude numérique de flexion des poutres composites en I",
       "intro": "Étude numérique de la flexion des poutres composites en I.",
       "outro": "Conception et validation numérique d’une structure composite en I.",
-      "competences": ["CATIA", "Calcul de structures", "Simulation", "Mécanique des matériaux"]
+      "competences": ["CATIA", "Calcul de structures", "Simulation", "Mécanique des matériaux"],
+      "gallery": ["Img/logo%20ensam%20.png", "Img/DS-CATIA-Logo.png", "Img/ANSYS_logo.png"]
     },
     {
       "delay": 200,
@@ -132,7 +133,8 @@
       "title": "Conception, modélisation et simulation des différents composants d’avion",
       "intro": "Conception, modélisation et simulation des différents composants d’avion.",
       "outro": "Travail de modélisation et de simulation de composants aéronautiques.",
-      "competences": ["CATIA", "CAO", "Simulation", "Analyse structurelle"]
+      "competences": ["CATIA", "CAO", "Simulation", "Analyse structurelle"],
+      "gallery": ["Img/logo%20ensam%20.png", "Img/DS-CATIA-Logo.png", "Img/Logo-dassault-systemes-3ds.svg"]
     },
     {
       "delay": 300,
@@ -143,7 +145,8 @@
       "title": "Étude, conception et réalisation d’un accessoire de fixation pour tour parallèle",
       "intro": "Étude, conception et réalisation d’un accessoire de fixation pour tour parallèle.",
       "outro": "Conception CAO, réalisation et mise au point du dispositif.",
-      "competences": ["Conception assistée par ordinateur (CAO)", "Réalisation", "Usinage", "Prototypage"]
+      "competences": ["Conception assistée par ordinateur (CAO)", "Réalisation", "Usinage", "Prototypage"],
+      "gallery": ["Img/logo%20ensam%20.png", "Img/SOLIDWORKS%20DESIGN%20-%20PROFESSIONAL.png", "Img/PROFESSIONAL%20-%20DRAWING%20TOOLS.png"]
     },
     {
       "delay": 400,
@@ -154,7 +157,8 @@
       "title": "Étude, conception et automatisation d'un broyeur d'huile traditionnelle",
       "intro": "Étude, conception et automatisation d’un broyeur d’huile traditionnelle.",
       "outro": "Intégration d’une approche mécanique et automatisée sur prototype.",
-      "competences": ["Conception assistée par ordinateur (CAO)", "Automatisation", "SolidWorks", "Arduino"]
+      "competences": ["Conception assistée par ordinateur (CAO)", "Automatisation", "SolidWorks", "Arduino"],
+      "gallery": ["Img/fsts%20logo.png", "Img/Arduino.svg", "Img/SOLIDWORKS%20DESIGN%20-%20ASSOCIATE.png"]
     },
     {
       "delay": 500,
@@ -165,7 +169,8 @@
       "title": "Feu Rouge",
       "intro": "Projet de feu rouge automatique basé sur une logique embarquée.",
       "outro": "Conception d’un système simple de signalisation et d’automatisation.",
-      "competences": ["Conception assistée par ordinateur (CAO)", "Électronique", "Automatisation"]
+      "competences": ["Conception assistée par ordinateur (CAO)", "Électronique", "Automatisation"],
+      "gallery": ["Img/fsts%20logo.png", "Img/Arduino.svg", "Img/EXCEL.svg"]
     }
   ],
   "skills": [
@@ -202,108 +207,246 @@
       "tags": ["EASA Part 21", "Part 145", "FAA FAR", "CS-25", "ETSO", "AS", "Documentation AMM / SPM"]
     }
   ],
+  "softwareLogos": [
+    {
+      "delay": 100,
+      "name": "CATIA",
+      "logo": "Img/DS-CATIA-Logo.png",
+      "alt": "CATIA",
+      "accent": "#1a3a5c"
+    },
+    {
+      "delay": 120,
+      "name": "3DEXPERIENCE",
+      "logo": "Img/3D exp.png",
+      "alt": "3DEXPERIENCE",
+      "accent": "#2a8cb3"
+    },
+    {
+      "delay": 140,
+      "name": "SolidWorks",
+      "logo": "Img/solidworks logo.png",
+      "alt": "SolidWorks",
+      "accent": "#c62828"
+    },
+    {
+      "delay": 180,
+      "name": "ANSYS",
+      "logo": "Img/ANSYS_logo.png",
+      "alt": "ANSYS",
+      "accent": "#005a8f"
+    },
+    {
+      "delay": 220,
+      "name": "ABAQUS",
+      "logo": "Img/abaqus.png",
+      "alt": "ABAQUS",
+      "short": "ABQ",
+      "accent": "#6d3dc7"
+    },
+    {
+      "delay": 260,
+      "name": "Excel",
+      "logo": "Img/EXCEL.svg",
+      "alt": "Excel",
+      "short": "XL",
+      "accent": "#107c41"
+    },
+    {
+      "delay": 300,
+      "name": "Word",
+      "logo": "Img/word.svg",
+      "alt": "Word",
+      "short": "WD",
+      "accent": "#185abd"
+    },
+    {
+      "delay": 340,
+      "name": "Power Point",
+      "logo": "Img/PowerPoint.svg",
+      "alt": "PowerPoint",
+      "short": "PP",
+      "accent": "#d24726"
+    },
+    {
+      "delay": 380,
+      "name": "Python",
+      "logo": "Img/python.svg",
+      "alt": "Python",
+      "short": "PY",
+      "accent": "#3776ab"
+    },
+    {
+      "delay": 420,
+      "name": "PowerBI",
+      "logo": "Img/PowerBI.svg",
+      "alt": "Power BI",
+      "short": "BI",
+      "accent": "#f2c811"
+    },
+    {
+      "delay": 460,
+      "name": "CES EduPack",
+      "logo": "Img/ces edupack.png",
+      "alt": "CES EduPack",
+      "short": "CE",
+      "accent": "#8b5cf6"
+    },
+    {
+      "delay": 500,
+      "name": "Arduino",
+      "logo": "Img/Arduino.svg",
+      "alt": "Arduino",
+      "short": "AR",
+      "accent": "#00979d"
+    },
+    {
+      "delay": 540,
+      "name": "Cura",
+      "logo": "Img/cura.png",
+      "alt": "Cura",
+      "short": "CU",
+      "accent": "#f2b705"
+    },
+    {
+      "delay": 580,
+      "name": "TopSolid",
+      "logo": "Img/topsolid.jpg",
+      "alt": "TopSolid",
+      "short": "TS",
+      "accent": "#1f4f82"
+    },
+    {
+      "delay": 620,
+      "name": "SAP",
+      "logo": "Img/SAP.svg",
+      "alt": "SAP",
+      "short": "SAP",
+      "accent": "#0a6ed1"
+    }
+  ],
   "certifications": [
     {
       "delay": 100,
       "alignment": "left",
+      "img": "Img/SOLIDWORKS%20DESIGN%20-%20PROFESSIONAL.png",
+      "alt": "SOLIDWORKS Design Professional (CSWP)",
+      "title": "SOLIDWORKS Design Professional (CSWP)",
+      "status": "Certifié",
+      "link": "https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-3M5HYUFXSG"
+    },
+    {
+      "delay": 200,
+      "alignment": "up",
       "img": "Img/Solidwoks%20Expert.png",
       "alt": "SOLIDWORKS Expert",
       "title": "SOLIDWORKS Expert",
       "status": "En cours",
       "inProgress": true,
       "progressValue": 60,
-      "desc": "Certification actuellement en cours de progression sur LinkedIn.",
-      "link": "https://www.linkedin.com/"
-    },
-    {
-      "delay": 200,
-      "alignment": "up",
-      "img": "Img/SOLIDWORKS%20DESIGN%20-%20PROFESSIONAL.png",
-      "alt": "SOLIDWORKS Design Professional",
-      "title": "SOLIDWORKS Design Professional",
-      "status": "Certifié",
-      "desc": "Conception avancée et modélisation 3D.",
-      "link": "https://www.linkedin.com/"
+      "desc": "Certification actuellement en cours de progression.",
+      "link": "https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-QHTCU8XE5R"
     },
     {
       "delay": 100,
       "alignment": "right",
       "img": "Img/SOLIDWORKS%20DESIGN%20-%20ASSOCIATE.png",
-      "alt": "SOLIDWORKS Design Associate",
-      "title": "SOLIDWORKS Design Associate",
+      "alt": "SOLIDWORKS Design Associate (CSWA)",
+      "title": "SOLIDWORKS Design Associate (CSWA)",
       "status": "Certifié",
-      "desc": "Fondamentaux de la conception mécanique.",
-      "link": "https://www.linkedin.com/"
-    },
-    {
-      "delay": 200,
-      "alignment": "left",
-      "img": "Img/SOLIDWORKS%20Champion%20.png",
-      "alt": "SOLIDWORKS Champion",
-      "title": "SOLIDWORKS Champion",
-      "status": "Certifié",
-      "desc": "Reconnaissance liée à l’expertise logicielle.",
-      "link": "https://www.linkedin.com/"
+      "link": "https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-YSN6FJA5E7"
     },
     {
       "delay": 100,
       "alignment": "up",
       "img": "Img/PROFESSIONAL%20-%20WELDMENTS.png",
       "alt": "SOLIDWORKS Weldments Professional",
-      "title": "Weldments Professional",
+      "title": "SOLIDWORKS Weldments Professional",
       "status": "Certifié",
-      "desc": "Structures soudées et conception associée.",
-      "link": "https://www.linkedin.com/"
+      "link": "https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-QCNE7VG6L3"
     },
     {
       "delay": 200,
       "alignment": "right",
       "img": "Img/PROFESSIONAL%20-%20SURFACING.png",
       "alt": "SOLIDWORKS Surfacing Professional",
-      "title": "Surfacing Professional",
+      "title": "SOLIDWORKS Surfacing Professional",
       "status": "Certifié",
-      "desc": "Surfaces complexes et modélisation avancée.",
-      "link": "https://www.linkedin.com/"
+      "link": "https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-BF6RYCPKZA"
     },
     {
       "delay": 100,
       "alignment": "left",
       "img": "Img/PROFESSIONAL%20-%20SHEET%20METAL.png",
       "alt": "SOLIDWORKS Sheet Metal Professional",
-      "title": "Sheet Metal Professional",
+      "title": "SOLIDWORKS Sheet Metal Professional",
       "status": "Certifié",
-      "desc": "Conception en tôlerie et mise en plan.",
-      "link": "https://www.linkedin.com/"
+      "link": "https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-MZY7GEH83S"
     },
     {
       "delay": 200,
       "alignment": "up",
       "img": "Img/PROFESSIONAL%20-%20DRAWING%20TOOLS.png",
       "alt": "SOLIDWORKS Drawing Tools Professional",
-      "title": "Drawing Tools Professional",
+      "title": "SOLIDWORKS Drawing Tools Professional",
       "status": "Certifié",
-      "desc": "Outils de mise en plan et documentation technique.",
-      "link": "https://www.linkedin.com/"
+      "link": "https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-92PZRTJVW3"
     },
     {
       "delay": 100,
+      "alignment": "left",
+      "img": "Img/Safran%20Logo.png",
+      "alt": "Certification e-learning Résolution de problèmes 8D",
+      "title": "Certification e-learning Résolution de problèmes 8D",
+      "status": "Certifié"
+    },
+    {
+      "delay": 200,
       "alignment": "right",
-      "img": "Img/ANSYS_logo.png",
-      "alt": "ANSYS",
-      "title": "ANSYS",
-      "status": "Certifié",
-      "desc": "Simulation et validation numérique.",
-      "link": "https://www.linkedin.com/"
+      "img": "Img/Safran%20Logo.png",
+      "alt": "QRQC \"A problème terrain, réponse terrain\"",
+      "title": "QRQC \"A problème terrain, réponse terrain\"",
+      "status": "Certifié"
+    },
+    {
+      "delay": 100,
+      "alignment": "up",
+      "img": "Img/Safran%20Logo.png",
+      "alt": "Certificat E-learning AMDEC",
+      "title": "Certificat E-learning AMDEC",
+      "status": "Certifié"
     },
     {
       "delay": 200,
       "alignment": "left",
-      "img": "Img/DS-CATIA-Logo.png",
-      "alt": "CATIA",
-      "title": "CATIA",
-      "status": "Certifié",
-      "desc": "Modélisation et conception 3D.",
-      "link": "https://www.linkedin.com/"
+      "img": "Img/orange.png",
+      "alt": "Solidworks & Eagle PCB",
+      "title": "Solidworks & Eagle PCB",
+      "status": "Certifié"
+    },
+    {
+      "delay": 100,
+      "alignment": "right",
+      "img": "Img/orange.png",
+      "alt": "Machine learning",
+      "title": "Machine learning",
+      "status": "Certifié"
+    },
+    {
+      "delay": 200,
+      "alignment": "up",
+      "img": "Img/isae.jpeg",
+      "alt": "Flight mechanics - The basis",
+      "title": "Flight mechanics - The basis",
+      "status": "Certifié"
+    },
+    {
+      "delay": 100,
+      "alignment": "left",
+      "img": "Img/deeplearning.jpeg",
+      "alt": "AI For Everyone",
+      "title": "AI For Everyone",
+      "status": "Certifié"
     }
   ]
 }
