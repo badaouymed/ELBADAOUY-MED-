@@ -1,3 +1,4 @@
+document.documentElement.classList.add('js-enabled');
 const topbar = document.querySelector(".topbar");
 const menuButton = document.querySelector(".menu-button");
 const nav = document.querySelector(".nav");
