@@ -41,10 +41,30 @@ La configuration la plus simple avec un domaine `.me` chez Namecheap est:
 2. Connecter le repo à Vercel ou Netlify.
 3. Pointer le domaine Namecheap vers l’hébergeur choisi.
 
+Si tu veux rester sur GitHub pour le déploiement, utilise GitHub Pages:
+
+1. Pousse le projet sur un dépôt GitHub public.
+2. Va dans `Settings` > `Pages`.
+3. Dans `Build and deployment`, choisis `Deploy from a branch`.
+4. Sélectionne `main` puis le dossier `/root`.
+5. Enregistre et attends l’URL GitHub Pages.
+6. Dans GitHub, ajoute ensuite ton domaine personnalisé dans `Pages`.
+7. Crée un fichier `CNAME` à la racine du projet avec ton domaine final, par exemple `cv.tondomaine.me`.
+
 ### DNS Namecheap vers Vercel
 
 - `A` pour `@` vers `76.76.21.21`
 - `CNAME` pour `www` vers `cname.vercel-dns.com`
+
+### DNS Namecheap vers GitHub Pages
+
+- `A` pour `@` vers `185.199.108.153`
+- `A` pour `@` vers `185.199.109.153`
+- `A` pour `@` vers `185.199.110.153`
+- `A` pour `@` vers `185.199.111.153`
+- `CNAME` pour `www` vers `<ton-login>.github.io`
+
+Si tu utilises un sous-domaine comme `cv.tondomaine.me`, crée plutôt un `CNAME` pour `cv` vers `<ton-login>.github.io`.
 
 ### Suite logique
 

@@ -13,6 +13,77 @@ let activeGalleryIndex = 0;
 
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+function escapeHTML(value) {
+  return String(value ?? "").replace(/[&<>"']/g, (character) => {
+    switch (character) {
+      case "&":
+        return "&amp;";
+      case "<":
+        return "&lt;";
+      case ">":
+        return "&gt;";
+      case '"':
+        return "&quot;";
+      case "'":
+        return "&#39;";
+      default:
+        return character;
+    }
+  });
+}
+
+function sanitizeUrl(value) {
+  const input = String(value ?? "").trim();
+
+  if (!input) {
+    return "";
+  }
+
+  if (input.startsWith("/") || input.startsWith("./") || input.startsWith("../")) {
+    return input;
+  }
+
+  try {
+    const parsed = new URL(input, window.location.origin);
+    if (["http:", "https:", "mailto:", "tel:"].includes(parsed.protocol)) {
+      return input;
+    }
+  } catch {
+    return "";
+  }
+
+  return "";
+}
+
+function sanitizeAlignment(value) {
+  return ["left", "right", "up"].includes(value) ? value : "left";
+}
+
+function sanitizeColor(value, fallback = "#1a3a5c") {
+  const input = String(value ?? "").trim();
+
+  if (/^#[0-9a-fA-F]{3,8}$/.test(input) || /^rgba?\([\d\s.,%]+\)$/.test(input) || /^hsla?\([\d\s.,%]+\)$/.test(input)) {
+    return input;
+  }
+
+  return fallback;
+}
+
+function sanitizeSvg(value) {
+  const input = String(value ?? "").trim();
+
+  if (!/^<svg[\s>]/i.test(input) || /on\w+=/i.test(input) || /javascript:/i.test(input)) {
+    return "";
+  }
+
+  return input;
+}
+
+function toNumber(value, fallback = 0) {
+  const parsed = Number(value);
+  return Number.isFinite(parsed) ? parsed : fallback;
+}
+
 function toggleNav(open) {
   if (!nav || !menuButton) {
     return;
@@ -72,7 +143,7 @@ function formatCompetences(competences) {
   const remainingCount = competences.length - visibleCompetences.length;
   const remainingText = remainingCount > 0 ? `, +${remainingCount} compétence${remainingCount > 1 ? "s" : ""}` : "";
 
-  return `${visibleCompetences.join(", ")}${remainingText}`;
+  return `${visibleCompetences.map(escapeHTML).join(", ")}${remainingText}`;
 }
 
 function observeElements() {
@@ -175,22 +246,31 @@ function buildHTML(data) {
   const expContainer = document.getElementById("experience-container");
   if (expContainer && data.experiences) {
     let expHTML = "";
-    data.experiences.forEach(exp => {
+    data.experiences.forEach((exp) => {
+      const alignment = sanitizeAlignment(exp.alignment);
+      const delay = toNumber(exp.delay);
+      const logoSrc = sanitizeUrl(exp.logo);
+      const title = escapeHTML(exp.title);
+      const company = escapeHTML(exp.company);
+      const meta = escapeHTML(exp.meta);
+      const pill = escapeHTML(exp.pill);
+      const result = escapeHTML(exp.result);
+
       expHTML += `
-        <article class="experience panel timeline-item timeline-item--${exp.alignment} fade-${exp.alignment}" data-delay="${exp.delay}">
+        <article class="experience panel timeline-item timeline-item--${alignment} fade-${alignment}" data-delay="${delay}">
           <div class="experience__top">
-            ${exp.logo ? `<img class="experience__logo" loading="lazy" src="${exp.logo}" alt="${exp.alt}" />` : `<div class="experience__badge">${exp.badge}</div>`}
+            ${logoSrc ? `<img class="experience__logo" loading="lazy" decoding="async" src="${logoSrc}" alt="${escapeHTML(exp.alt)}" />` : `<div class="experience__badge">${escapeHTML(exp.badge)}</div>`}
             <div>
-              <p class="timeline__meta">${exp.meta}</p>
-              <h3>${exp.title}</h3>
-              <p class="experience__company">${exp.company}</p>
+              <p class="timeline__meta">${meta}</p>
+              <h3>${title}</h3>
+              <p class="experience__company">${company}</p>
             </div>
           </div>
-          <div class="result-pill">${exp.pill}</div>
+          <div class="result-pill">${pill}</div>
           <ul>
-            ${exp.bullets.map(b => `<li>${b}</li>`).join("")}
+            ${(Array.isArray(exp.bullets) ? exp.bullets : []).map((bullet) => `<li>${escapeHTML(bullet)}</li>`).join("")}
           </ul>
-          <p class="experience__result">${exp.result}</p>
+          <p class="experience__result">${result}</p>
         </article>`;
     });
     expContainer.innerHTML = expHTML;
@@ -200,17 +280,18 @@ function buildHTML(data) {
   const eduContainer = document.getElementById("education-container");
   if (eduContainer && data.education) {
     let eduHTML = "";
-    data.education.forEach(edu => {
-      const metaHTML = (edu.date || edu.location) ? `<p class="education__meta">${edu.date || ''}${edu.date && edu.location ? ' · ' : ''}${edu.location || ''}</p>` : '';
-      const competencesHTML = edu.competences ? `<p class="education__competences"><strong>Compétences :</strong> ${formatCompetences(edu.competences)}</p>` : '';
+    data.education.forEach((edu) => {
+      const metaHTML = (edu.date || edu.location) ? `<p class="education__meta">${escapeHTML(edu.date || "")}${edu.date && edu.location ? " · " : ""}${escapeHTML(edu.location || "")}</p>` : "";
+      const competencesHTML = edu.competences ? `<p class="education__competences"><strong>Compétences :</strong> ${formatCompetences(edu.competences)}</p>` : "";
+      const logoSrc = sanitizeUrl(edu.logo);
         
       eduHTML += `
-        <article class="education fade-${edu.alignment}" data-delay="${edu.delay}">
+        <article class="education fade-${sanitizeAlignment(edu.alignment)}" data-delay="${toNumber(edu.delay)}">
           <div class="education__top">
-            <img class="education__logo" loading="lazy" src="${edu.logo}" alt="${edu.alt}" />
+            <img class="education__logo" loading="lazy" decoding="async" src="${logoSrc}" alt="${escapeHTML(edu.alt)}" />
             <div class="education__copy">
-              <p class="education__school">${edu.school}</p>
-              <h3>${edu.title}</h3>
+              <p class="education__school">${escapeHTML(edu.school)}</p>
+              <h3>${escapeHTML(edu.title)}</h3>
               ${metaHTML}
               ${competencesHTML}
             </div>
@@ -227,22 +308,28 @@ function buildHTML(data) {
 
     data.projects.forEach((proj, index) => {
       const competencesList = Array.isArray(proj.competences) ? proj.competences.slice(0, 4) : [];
-      const logoMarkup = (proj.logo && proj.logo.endsWith(".png")) || (proj.logo && proj.logo.endsWith(".svg"))
-        ? `<img class="project__logo-img" loading="lazy" src="${proj.logo}" alt="${proj.institution || proj.title}" />`
-        : `<span>${proj.logo || "PR"}</span>`;
+      const logoSrc = sanitizeUrl(proj.logo);
+      const alignment = sanitizeAlignment(proj.alignment);
+      const title = escapeHTML(proj.title);
+      const institution = escapeHTML(proj.institution);
+      const period = escapeHTML(proj.period);
+      const summary = escapeHTML(proj.intro || proj.outro || "");
+      const logoMarkup = logoSrc
+        ? `<img class="project__logo-img" loading="lazy" decoding="async" src="${logoSrc}" alt="${escapeHTML(proj.institution || proj.title)}" />`
+        : `<span>${escapeHTML(proj.logo || "PR")}</span>`;
 
       projHTML += `
-        <article class="project project--list fade-${proj.alignment}" data-delay="${proj.delay}" data-project-index="${index}" role="button" tabindex="0" aria-label="Ouvrir la galerie du projet ${proj.title}">
+        <article class="project project--list fade-${alignment}" data-delay="${toNumber(proj.delay)}" data-project-index="${index}" role="button" tabindex="0" aria-label="Ouvrir la galerie du projet ${title}">
           <div class="project__top">
             <div class="project__logo" aria-hidden="true">${logoMarkup}</div>
             <div class="project__heading">
-              <h3>${proj.title}</h3>
-              <p class="project__meta">${proj.period}${proj.institution ? ` · ${proj.institution}` : ""}</p>
+              <h3>${title}</h3>
+              <p class="project__meta">${period}${proj.institution ? ` · ${institution}` : ""}</p>
             </div>
           </div>
-          <p class="project__summary">${proj.intro || proj.outro || ""}</p>
+          <p class="project__summary">${summary}</p>
           <div class="project__chips" aria-label="Compétences">
-            ${competencesList.map((item) => `<span class="project-chip">${item}</span>`).join("")}
+            ${competencesList.map((item) => `<span class="project-chip">${escapeHTML(item)}</span>`).join("")}
           </div>
           <div class="project__overlay" aria-hidden="true">
             <span class="project__overlay-text">voir galerie</span>
@@ -257,18 +344,19 @@ function buildHTML(data) {
   const skillsContainer = document.getElementById("skills-container");
   if (skillsContainer && data.skills) {
     let skillsHTML = "";
-    data.skills.forEach(skill => {
+    data.skills.forEach((skill) => {
+      const alignment = sanitizeAlignment(skill.alignment);
       skillsHTML += `
-        <article class="skill-column panel fade-${skill.alignment}" data-delay="${skill.delay}">
+        <article class="skill-column panel fade-${alignment}" data-delay="${toNumber(skill.delay)}">
           <div class="skill-column__head">
-            ${skill.svg}
+            ${sanitizeSvg(skill.svg)}
             <div>
-              <p class="skill-column__eyebrow">${skill.eyebrow}</p>
-              <h3>${skill.title}</h3>
+              <p class="skill-column__eyebrow">${escapeHTML(skill.eyebrow)}</p>
+              <h3>${escapeHTML(skill.title)}</h3>
             </div>
           </div>
           <div class="skill-list">
-            ${skill.tags.map(t => `<span class="skill-tag">${t}</span>`).join("")}
+            ${(Array.isArray(skill.tags) ? skill.tags : []).map((tag) => `<span class="skill-tag">${escapeHTML(tag)}</span>`).join("")}
           </div>
         </article>`;
     });
@@ -285,13 +373,13 @@ function buildHTML(data) {
         return;
       }
 
-      const title = software.alt || software.name || "Logiciel";
-      const softwareKey = (software.name || title).toLowerCase();
+      const title = escapeHTML(software.alt || software.name || "Logiciel");
+      const softwareKey = String(software.name || software.alt || "Logiciel").toLowerCase();
       const isSmaller = smallerLogos.has(softwareKey) || smallerLogos.has(softwareKey.replace(/\s+/g, " "));
-      const logoMarkup = `<img class="software-logo__img" loading="lazy" src="${software.logo}" alt="${title}" />`;
+      const logoMarkup = `<img class="software-logo__img" loading="lazy" decoding="async" src="${sanitizeUrl(software.logo)}" alt="${title}" />`;
 
       softwareHTML += `
-        <article class="software-logo${isSmaller ? " software-logo--small" : ""}" style="--software-accent: ${software.accent || "#1a3a5c"};">
+        <article class="software-logo${isSmaller ? " software-logo--small" : ""}" style="--software-accent: ${sanitizeColor(software.accent)};">
           ${logoMarkup}
         </article>`;
     });
@@ -303,34 +391,34 @@ function buildHTML(data) {
   const certContainer = document.getElementById("certifications-container");
   if (certContainer && data.certifications) {
     let certHTML = "";
-    data.certifications.forEach(cert => {
-      const certTitle = cert.title || "Certification";
-      const certAlt = cert.alt || certTitle;
-      const certStatus = cert.status || "Certifié";
-      const certLink = cert.link || "";
+    data.certifications.forEach((cert) => {
+      const certTitle = escapeHTML(cert.title || "Certification");
+      const certAlt = escapeHTML(cert.alt || certTitle);
+      const certStatus = escapeHTML(cert.status || "Certifié");
+      const certLink = sanitizeUrl(cert.link || "");
       let progressHTML = cert.inProgress 
-        ? `<div class="cert__bar"><span class="cert__bar-fill cert__bar-fill--active"></span></div><p class="cert__progress">Progression ${cert.progressValue}%</p>` 
+        ? `<div class="cert__bar"><span class="cert__bar-fill cert__bar-fill--active"></span></div><p class="cert__progress">Progression ${toNumber(cert.progressValue)}%</p>` 
         : ``;
       const certBody = `
-            <img loading="lazy" src="${cert.img || ""}" alt="${certAlt}" />
+            <img loading="lazy" decoding="async" src="${sanitizeUrl(cert.img || "")}" alt="${certAlt}" />
             <div class="cert__content">
               <div class="cert__head">
                 <h3>${certTitle}</h3>
                 <span class="cert__status ${cert.inProgress ? 'cert__status--progress' : 'cert__status--done'}">${certStatus}</span>
               </div>
-              ${cert.desc ? `<p>${cert.desc}</p>` : ``}
+              ${cert.desc ? `<p>${escapeHTML(cert.desc)}</p>` : ``}
               ${progressHTML}
             </div>`;
         
       certHTML += certLink
         ? `
-        <article class="cert panel fade-${cert.alignment}" data-delay="${cert.delay}">
+        <article class="cert panel fade-${sanitizeAlignment(cert.alignment)}" data-delay="${toNumber(cert.delay)}">
           <a class="cert__link" href="${certLink}" target="_blank" rel="noopener noreferrer">
 ${certBody}
           </a>
         </article>`
         : `
-        <article class="cert panel fade-${cert.alignment}" data-delay="${cert.delay}">
+        <article class="cert panel fade-${sanitizeAlignment(cert.alignment)}" data-delay="${toNumber(cert.delay)}">
           <div class="cert__link cert__link--static">
 ${certBody}
           </div>
@@ -341,13 +429,13 @@ ${certBody}
 }
 
 function getProjectGallery(project) {
-  const gallery = Array.isArray(project?.gallery) ? project.gallery.filter(Boolean) : [];
+  const gallery = Array.isArray(project?.gallery) ? project.gallery.map((item) => sanitizeUrl(item)).filter(Boolean) : [];
 
   if (gallery.length > 0) {
     return gallery;
   }
 
-  return project?.logo ? [project.logo] : [];
+  return project?.logo ? [sanitizeUrl(project.logo)].filter(Boolean) : [];
 }
 
 function renderProjectModal() {
@@ -379,7 +467,7 @@ function renderProjectModal() {
   nextButton.disabled = gallery.length <= 1;
 
   thumbnails.innerHTML = gallery
-    .map((src, index) => `<button type="button" class="project-modal__thumb${index === activeGalleryIndex ? " is-active" : ""}" data-thumb-index="${index}"><img src="${src}" alt="${project.title} miniature ${index + 1}" loading="lazy" /></button>`)
+    .map((src, index) => `<button type="button" class="project-modal__thumb${index === activeGalleryIndex ? " is-active" : ""}" data-thumb-index="${index}"><img src="${sanitizeUrl(src)}" alt="${escapeHTML(project.title)} miniature ${index + 1}" loading="lazy" decoding="async" /></button>`)
     .join("");
 }
 

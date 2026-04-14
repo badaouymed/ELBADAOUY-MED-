@@ -8,6 +8,10 @@
       content="Ingénieur méthodes, industrialisation et aéronautique. Expertise CATIA, ANSYS et SolidWorks, avec expérience Safran Seats et Royal Air Maroc."
     />
     <meta name="theme-color" content="rgb(42, 140, 179)" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; base-uri 'self'; connect-src 'self'; font-src 'self' https://fonts.gstatic.com; form-action 'self'; frame-ancestors 'none'; img-src 'self' https: data:; object-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'"
+    />
     <title>Mohammed El Badaouy — Ingénieur Méthodes & Industrialisation</title>
     <meta property="og:title" content="Mohammed El Badaouy — Ingénieur Méthodes & Industrialisation" />
     <meta
@@ -175,6 +179,43 @@
           </div>
           <p class="section__note">Une expérience aéronautique concrète, des outils techniques solides et une culture d’amélioration continue.</p>
         </div>
+
+        <div class="signal-grid">
+          <article class="signal panel fade-left" data-delay="100">
+            <span>01</span>
+            <h3>Méthodes & industrialisation</h3>
+            <p>Structuration de processus, cahiers des charges, Lean, DMAIC et industrialisation produit.</p>
+          </article>
+          <article class="signal panel fade-up" data-delay="200">
+            <span>02</span>
+            <h3>Aéronautique & qualité</h3>
+            <p>Travail sur des standards exigeants, des exigences constructeurs et des enjeux de conformité.</p>
+          </article>
+          <article class="signal panel fade-right" data-delay="300">
+            <span>03</span>
+            <h3>Résultats concrets</h3>
+            <p>Amélioration du suivi terrain, validation de prototypes et contribution à des gains qualité mesurables.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="section fade-up">
+        <div class="section__head">
+          <div>
+            <p class="section__label">Expérience</p>
+            <h2>Mes expériences professionnelles</h2>
+          </div>
+          <p class="section__note">Chaque mission est présentée avec la période, la localisation et le rôle principal.</p>
+        </div>
+
+        <div id="experience-container" class="timeline-vertical">
+          <!-- Injecté dynamiquement via data.json -->
+        </div>
+      </section>
+
+      <section id="etudes" class="section section--split fade-up">
+        <div>
+          <p class="section__label">Formation</p>
           <h2>Formations & Diplômes</h2>
         </div>
         <div id="education-container" class="education-grid">
@@ -330,7 +371,7 @@
           <a class="button button--footer button--footer-outline" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">Voir sur LinkedIn</a>
         </div>
       </div>
-      <p class="footer-legal">© 2026 Mohammed El Badaouy — made with <span aria-hidden="true" style="color:#e53935;">♥</span></p>
+      <p class="footer-legal">© 2026 Mohammed El Badaouy — made with <span class="footer-legal__heart" aria-hidden="true">♥</span></p>
     </footer>
 
     <div class="project-modal" aria-hidden="true">
@@ -351,6 +392,6 @@
       </div>
     </div>
 
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
   </body>
 </html>
