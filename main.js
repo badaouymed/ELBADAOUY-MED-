@@ -217,6 +217,19 @@ function formatCompetences(competences) {
   return `${visibleCompetences.map(escapeHTML).join(", ")}${remainingText}`;
 }
 
+function renderTypewriterChars(text) {
+  return String(text ?? "")
+    .split("")
+    .map((char, index) => {
+      if (char === " ") {
+        return `<span class="project-cta-char project-cta-char--space" style="--i:${index}">&nbsp;</span>`;
+      }
+
+      return `<span class="project-cta-char" style="--i:${index}">${escapeHTML(char)}</span>`;
+    })
+    .join("");
+}
+
 function observeElements() {
   const targets = Array.from(animationTargets);
 
@@ -407,6 +420,18 @@ function buildHTML(data) {
           </div>
         </article>`;
     });
+
+    projHTML += `
+      <a class="project project--list project--portfolio-cta project--portfolio-cta-simple fade-up" data-delay="500" href="https://pf.badaouy.me" aria-label="Ouvrir mon portfolio">
+        <div class="project__heading project__heading--cta">
+          <h3 class="project-cta-title" aria-label="Osez découvrir mon univers professionnel">
+            ${renderTypewriterChars("OSEZ DECOUVRIR MON UNIVERS PROFESSIONNEL")}
+          </h3>
+        </div>
+        <div class="project__overlay" aria-hidden="true">
+          <span class="project__overlay-text">ouvrir portfolio</span>
+        </div>
+      </a>`;
 
     projContainer.innerHTML = projHTML;
   }
