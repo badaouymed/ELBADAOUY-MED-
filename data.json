@@ -1,4 +1,5 @@
 {
+  "activeProfile": "methodes_indus",
   "experiences": [
     {
       "id": "exp-1",
@@ -78,7 +79,11 @@
       "title": "Master 2 (M2), Industrie Aéronautique Navigabilité",
       "school": "Université Paris-Saclay",
       "date": "sept. 2024 — juin 2025",
-      "competences": ["Aéronautique", "Conception assistée par ordinateur (CAO)", "Navigabilité"]
+      "competences": [
+        "Aéronautique",
+        "Conception assistée par ordinateur (CAO)",
+        "Navigabilité"
+      ]
     },
     {
       "delay": 200,
@@ -88,7 +93,12 @@
       "title": "Diplôme d'ingénieur, Ingénierie mécanique pour l'industrie aéronautique",
       "school": "ENSAM Rabat",
       "date": "sept. 2021 — juin 2024",
-      "competences": ["Calcul de structures", "ANSYS", "Méthodes", "Conception mécanique"]
+      "competences": [
+        "Calcul de structures",
+        "ANSYS",
+        "Méthodes",
+        "Conception mécanique"
+      ]
     },
     {
       "delay": 300,
@@ -98,7 +108,9 @@
       "title": "Licence Science et technique : Génie mécanique",
       "school": "FST Settat",
       "date": "2020 — 2021",
-      "competences": ["Conception assistée par ordinateur (CAO)"]
+      "competences": [
+        "Conception assistée par ordinateur (CAO)"
+      ]
     },
     {
       "delay": 400,
@@ -108,221 +120,9 @@
       "title": "Diplôme d'études universitaires scientifiques et techniques, Génie électrique - Génie mécanique",
       "school": "FST Settat",
       "date": "2018 — 2020",
-      "competences": ["Conception assistée par ordinateur (CAO)"]
-    }
-  ],
-  "projects": [
-    {
-      "delay": 100,
-      "alignment": "left",
-      "logo": "Img/logo%20ensam%20.png",
-      "institution": "ENSAM Rabat",
-      "period": "avr. 2022 — mai 2022",
-      "title": "Étude numérique de flexion des poutres composites en I",
-      "intro": "Étude numérique de la flexion des poutres composites en I.",
-      "outro": "Conception et validation numérique d’une structure composite en I.",
-      "competences": ["CATIA", "Calcul de structures", "Simulation", "Mécanique des matériaux"],
-      "gallery": ["Img/logo%20ensam%20.png", "Img/DS-CATIA-Logo.png", "Img/ANSYS_logo.png"]
-    },
-    {
-      "delay": 200,
-      "alignment": "up",
-      "logo": "Img/logo%20ensam%20.png",
-      "institution": "ENSAM Rabat",
-      "period": "jan. 2023 — juil. 2023",
-      "title": "Conception, modélisation et simulation des différents composants d’avion",
-      "intro": "Conception, modélisation et simulation des différents composants d’avion.",
-      "outro": "Travail de modélisation et de simulation de composants aéronautiques.",
-      "competences": ["CATIA", "CAO", "Simulation", "Analyse structurelle"],
-      "gallery": ["Img/logo%20ensam%20.png", "Img/DS-CATIA-Logo.png", "Img/Logo-dassault-systemes-3ds.svg"]
-    },
-    {
-      "delay": 300,
-      "alignment": "right",
-      "logo": "Img/logo%20ensam%20.png",
-      "institution": "ENSAM Rabat",
-      "period": "fév. 2022 — juin 2022",
-      "title": "Étude, conception et réalisation d’un accessoire de fixation pour tour parallèle",
-      "intro": "Étude, conception et réalisation d’un accessoire de fixation pour tour parallèle.",
-      "outro": "Conception CAO, réalisation et mise au point du dispositif.",
-      "competences": ["Conception assistée par ordinateur (CAO)", "Réalisation", "Usinage", "Prototypage"],
-      "gallery": ["Img/logo%20ensam%20.png", "Img/SOLIDWORKS%20DESIGN%20-%20PROFESSIONAL.png", "Img/PROFESSIONAL%20-%20DRAWING%20TOOLS.png"]
-    },
-    {
-      "delay": 400,
-      "alignment": "left",
-      "logo": "Img/fsts%20logo.png",
-      "institution": "FST Settat",
-      "period": "mars 2021 — mars 2021",
-      "title": "Étude, conception et automatisation d'un broyeur d'huile traditionnelle",
-      "intro": "Étude, conception et automatisation d’un broyeur d’huile traditionnelle.",
-      "outro": "Intégration d’une approche mécanique et automatisée sur prototype.",
-      "competences": ["Conception assistée par ordinateur (CAO)", "Automatisation", "SolidWorks", "Arduino"],
-      "gallery": ["Img/fsts%20logo.png", "Img/Arduino.svg", "Img/SOLIDWORKS%20DESIGN%20-%20ASSOCIATE.png"]
-    },
-    {
-      "delay": 500,
-      "alignment": "right",
-      "logo": "Img/fsts%20logo.png",
-      "institution": "FST Settat",
-      "period": "fév. 2021 — mai 2021",
-      "title": "Feu Rouge",
-      "intro": "Projet de feu rouge automatique basé sur une logique embarquée.",
-      "outro": "Conception d’un système simple de signalisation et d’automatisation.",
-      "competences": ["Conception assistée par ordinateur (CAO)", "Électronique", "Automatisation"],
-      "gallery": ["Img/fsts%20logo.png", "Img/Arduino.svg", "Img/EXCEL.svg"]
-    }
-  ],
-  "skills": [
-    {
-      "delay": 100,
-      "alignment": "left",
-      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"skill-column__icon\"><path d=\"m21 16-9 5-9-5V8l9-5 9 5Z\"/><path d=\"m3.27 6.96 8.73 5.05 8.73-5.05\"/><path d=\"M12 22V12\"/></svg>",
-      "eyebrow": "Domaine",
-      "title": "Conception Mécanique & Simulation",
-      "tags": ["CATIA V5", "SolidWorks", "3DEXPERIENCE", "RDM", "Optimisation topologique", "Composites", "ANSYS", "ABAQUS", "ANSYS ACP", "Statique & Dynamique"]
-    },
-    {
-      "delay": 200,
-      "alignment": "up",
-      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"skill-column__icon\"><path d=\"M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z\"/><path d=\"M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9c.26-.54.83-.93 1.51-1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09c-.68 0-1.25.39-1.51 1Z\"/></svg>",
-      "eyebrow": "Expertise",
-      "title": "Industrialisation & Méthodes",
-      "tags": ["AMDEC", "DMAIC", "Lean", "5S", "Gammes de fabrication", "Modes opératoires", "Dossiers industriels", "QRQC", "8D", "Ishikawa", "5 Pourquoi", "Revues de conception", "mBOM"]
-    },
-    {
-      "delay": 300,
-      "alignment": "right",
-      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"skill-column__icon\"><polygon points=\"12 2 2 7 12 12 22 7 12 2\"/><polyline points=\"2 12 12 17 22 12\"/><polyline points=\"2 17 12 22 22 17\"/></svg>",
-      "eyebrow": "Atelier & Process",
-      "title": "Procédés de Fabrication",
-      "tags": ["Fabrication additive (FDM/SLA)", "Prototypage rapide", "Usinage CNC", "Assemblage aéronautique"]
-    },
-    {
-      "delay": 400,
-      "alignment": "left",
-      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"skill-column__icon\"><path d=\"M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.2-1.1.7l-1 2.5 7.5 4.5-4 4-2.8-.7c-.3 0-.6.2-.7.5l-1 1.5 5 1.5 1.5 5 1.5-1.1c.3-.2.5-.5.5-.8l-.7-2.8 4-4 4.5 7.5 2.5-1c.5-.2.8-.6.7-1.1z\"/></svg>",
-      "eyebrow": "Normes & Docs",
-      "title": "Aéronautique & Navigabilité",
-      "tags": ["EASA Part 21", "Part 145", "FAA FAR", "CS-25", "ETSO", "AS", "Documentation AMM / SPM"]
-    }
-  ],
-  "softwareLogos": [
-    {
-      "delay": 100,
-      "name": "CATIA",
-      "logo": "Img/DS-CATIA-Logo.png",
-      "alt": "CATIA",
-      "accent": "#1a3a5c"
-    },
-    {
-      "delay": 120,
-      "name": "3DEXPERIENCE",
-      "logo": "Img/3D exp.png",
-      "alt": "3DEXPERIENCE",
-      "accent": "#2a8cb3"
-    },
-    {
-      "delay": 140,
-      "name": "SolidWorks",
-      "logo": "Img/solidworks logo.png",
-      "alt": "SolidWorks",
-      "accent": "#c62828"
-    },
-    {
-      "delay": 180,
-      "name": "ANSYS",
-      "logo": "Img/ANSYS_logo.png",
-      "alt": "ANSYS",
-      "accent": "#005a8f"
-    },
-    {
-      "delay": 220,
-      "name": "ABAQUS",
-      "logo": "Img/abaqus.png",
-      "alt": "ABAQUS",
-      "short": "ABQ",
-      "accent": "#6d3dc7"
-    },
-    {
-      "delay": 260,
-      "name": "Excel",
-      "logo": "Img/EXCEL.svg",
-      "alt": "Excel",
-      "short": "XL",
-      "accent": "#107c41"
-    },
-    {
-      "delay": 300,
-      "name": "Word",
-      "logo": "Img/word.svg",
-      "alt": "Word",
-      "short": "WD",
-      "accent": "#185abd"
-    },
-    {
-      "delay": 340,
-      "name": "Power Point",
-      "logo": "Img/PowerPoint.svg",
-      "alt": "PowerPoint",
-      "short": "PP",
-      "accent": "#d24726"
-    },
-    {
-      "delay": 380,
-      "name": "Python",
-      "logo": "Img/python.svg",
-      "alt": "Python",
-      "short": "PY",
-      "accent": "#3776ab"
-    },
-    {
-      "delay": 420,
-      "name": "PowerBI",
-      "logo": "Img/PowerBI.svg",
-      "alt": "Power BI",
-      "short": "BI",
-      "accent": "#f2c811"
-    },
-    {
-      "delay": 460,
-      "name": "CES EduPack",
-      "logo": "Img/ces edupack.png",
-      "alt": "CES EduPack",
-      "short": "CE",
-      "accent": "#8b5cf6"
-    },
-    {
-      "delay": 500,
-      "name": "Arduino",
-      "logo": "Img/Arduino.svg",
-      "alt": "Arduino",
-      "short": "AR",
-      "accent": "#00979d"
-    },
-    {
-      "delay": 540,
-      "name": "Cura",
-      "logo": "Img/cura.png",
-      "alt": "Cura",
-      "short": "CU",
-      "accent": "#f2b705"
-    },
-    {
-      "delay": 580,
-      "name": "TopSolid",
-      "logo": "Img/topsolid.jpg",
-      "alt": "TopSolid",
-      "short": "TS",
-      "accent": "#1f4f82"
-    },
-    {
-      "delay": 620,
-      "name": "SAP",
-      "logo": "Img/SAP.svg",
-      "alt": "SAP",
-      "short": "SAP",
-      "accent": "#0a6ed1"
+      "competences": [
+        "Conception assistée par ordinateur (CAO)"
+      ]
     }
   ],
   "certifications": [
@@ -447,6 +247,747 @@
       "alt": "AI For Everyone",
       "title": "AI For Everyone",
       "status": "Certifié"
+    }
+  ],
+  "profileLabels": {
+    "methodes_indus": "Ingénierie Méthodes & Industrialisation",
+    "conception_mecanique": "Ingénieur Conception Mécanique",
+    "conception_generale": "Ingénieur Conception Générale"
+  },
+  "profiles": {
+    "methodes_indus": {
+      "hero": {
+        "eyebrow": "CV / portfolio · methodes · industrialisation aeronautique",
+        "titleLine1": "Ingenieur methodes et industrialisation",
+        "titleLine2": "au service de la performance aeronautique.",
+        "subtitle": "Ingenieur Methodes et Industrialisation diplome de l'ENSAM et de l'Universite Paris-Saclay, avec une experience concrete en environnement aeronautique chez Safran Seats et Royal Air Maroc.",
+        "quickFocus": "Methodes · Industrialisation · Aeronautique",
+        "panelTitle": "Optimiser, industrialiser et faire performer les systemes industriels aeronautiques.",
+        "panelSummary": "Experience terrain chez Safran Seats et Royal Air Maroc, avec une pratique solide de la conception mecanique et des methodes d'industrialisation.",
+        "footerSubtitle": "Ingenieur Methodes et Industrialisation diplome de l'ENSAM et de l'Universite Paris-Saclay, avec une experience concrete en environnement aeronautique (Safran Seats, Royal Air Maroc).",
+        "pageTitle": "Mohammed El Badaouy - Ingenierie Methodes et Industrialisation",
+        "pageDescription": "Profil ingenierie methodes et industrialisation aeronautique."
+      },
+      "projects": [
+        {
+          "delay": 100,
+          "alignment": "left",
+          "logo": "Img/logo%20ensam%20.png",
+          "institution": "ENSAM Rabat",
+          "period": "avr. 2022 - mai 2022",
+          "title": "Etude numerique de flexion des poutres composites en I",
+          "intro": "Etude numerique de la flexion des poutres composites en I.",
+          "outro": "Conception et validation numerique d'une structure composite en I.",
+          "competences": [
+            "CATIA",
+            "Calcul de structures",
+            "Simulation",
+            "Mecanique des materiaux"
+          ],
+          "gallery": [
+            "Img/logo%20ensam%20.png",
+            "Img/DS-CATIA-Logo.png",
+            "Img/ANSYS_logo.png"
+          ]
+        },
+        {
+          "delay": 200,
+          "alignment": "up",
+          "logo": "Img/logo%20ensam%20.png",
+          "institution": "ENSAM Rabat",
+          "period": "jan. 2023 - juil. 2023",
+          "title": "Conception, modelisation et simulation des composants d'avion",
+          "intro": "Conception et simulation de composants aeronautiques.",
+          "outro": "Travail de modelisation et de simulation de composants aeronautiques.",
+          "competences": [
+            "CATIA",
+            "CAO",
+            "Simulation",
+            "Analyse structurelle"
+          ],
+          "gallery": [
+            "Img/logo%20ensam%20.png",
+            "Img/DS-CATIA-Logo.png",
+            "Img/Logo-dassault-systemes-3ds.svg"
+          ]
+        },
+        {
+          "delay": 300,
+          "alignment": "right",
+          "logo": "Img/logo%20ensam%20.png",
+          "institution": "ENSAM Rabat",
+          "period": "fev. 2022 - juin 2022",
+          "title": "Etude et realisation d'un accessoire de fixation",
+          "intro": "Conception et realisation d'un accessoire de fixation pour tour parallele.",
+          "outro": "Conception CAO, realisation et mise au point du dispositif.",
+          "competences": [
+            "CAO",
+            "Realisation",
+            "Usinage",
+            "Prototypage"
+          ],
+          "gallery": [
+            "Img/logo%20ensam%20.png",
+            "Img/SOLIDWORKS%20DESIGN%20-%20PROFESSIONAL.png",
+            "Img/PROFESSIONAL%20-%20DRAWING%20TOOLS.png"
+          ]
+        },
+        {
+          "delay": 400,
+          "alignment": "left",
+          "logo": "Img/fsts%20logo.png",
+          "institution": "FST Settat",
+          "period": "mars 2021",
+          "title": "Conception et automatisation d'un broyeur traditionnel",
+          "intro": "Conception mecanique et automatisation d'un broyeur.",
+          "outro": "Integration d'une approche mecanique et automatisee sur prototype.",
+          "competences": [
+            "CAO",
+            "Automatisation",
+            "SolidWorks",
+            "Arduino"
+          ],
+          "gallery": [
+            "Img/fsts%20logo.png",
+            "Img/Arduino.svg",
+            "Img/SOLIDWORKS%20DESIGN%20-%20ASSOCIATE.png"
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "delay": 100,
+          "alignment": "left",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"skill-column__icon\"><path d=\"m21 16-9 5-9-5V8l9-5 9 5Z\"/><path d=\"m3.27 6.96 8.73 5.05 8.73-5.05\"/><path d=\"M12 22V12\"/></svg>",
+          "eyebrow": "Domaine",
+          "title": "Conception Mecanique et Simulation",
+          "tags": [
+            "CATIA V5",
+            "SolidWorks",
+            "3DEXPERIENCE",
+            "RDM",
+            "ANSYS",
+            "ABAQUS"
+          ]
+        },
+        {
+          "delay": 200,
+          "alignment": "up",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"skill-column__icon\"><path d=\"M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z\"/><path d=\"M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9c.26-.54.83-.93 1.51-1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09c-.68 0-1.25.39-1.51 1Z\"/></svg>",
+          "eyebrow": "Expertise",
+          "title": "Industrialisation et Methodes",
+          "tags": [
+            "AMDEC",
+            "DMAIC",
+            "Lean",
+            "5S",
+            "QRQC",
+            "8D"
+          ]
+        },
+        {
+          "delay": 300,
+          "alignment": "right",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"skill-column__icon\"><polygon points=\"12 2 2 7 12 12 22 7 12 2\"/><polyline points=\"2 12 12 17 22 12\"/><polyline points=\"2 17 12 22 22 17\"/></svg>",
+          "eyebrow": "Atelier",
+          "title": "Procedes de Fabrication",
+          "tags": [
+            "Fabrication additive",
+            "Prototypage rapide",
+            "Usinage CNC",
+            "Assemblage aeronautique"
+          ]
+        }
+      ],
+      "softwareLogos": [
+        {
+          "delay": 100,
+          "name": "CATIA",
+          "logo": "Img/DS-CATIA-Logo.png",
+          "alt": "CATIA",
+          "accent": "#1a3a5c"
+        },
+        {
+          "delay": 140,
+          "name": "SolidWorks",
+          "logo": "Img/solidworks logo.png",
+          "alt": "SolidWorks",
+          "accent": "#c62828"
+        },
+        {
+          "delay": 180,
+          "name": "ANSYS",
+          "logo": "Img/ANSYS_logo.png",
+          "alt": "ANSYS",
+          "accent": "#005a8f"
+        },
+        {
+          "delay": 220,
+          "name": "ABAQUS",
+          "logo": "Img/abaqus.png",
+          "alt": "ABAQUS",
+          "accent": "#6d3dc7"
+        },
+        {
+          "delay": 260,
+          "name": "Excel",
+          "logo": "Img/EXCEL.svg",
+          "alt": "Excel",
+          "accent": "#107c41"
+        },
+        {
+          "delay": 300,
+          "name": "Word",
+          "logo": "Img/word.svg",
+          "alt": "Word",
+          "accent": "#185abd"
+        },
+        {
+          "delay": 340,
+          "name": "Power Point",
+          "logo": "Img/PowerPoint.svg",
+          "alt": "PowerPoint",
+          "accent": "#d24726"
+        },
+        {
+          "delay": 380,
+          "name": "SAP",
+          "logo": "Img/SAP.svg",
+          "alt": "SAP",
+          "accent": "#0a6ed1"
+        }
+      ]
+    },
+    "conception_mecanique": {
+      "hero": {
+        "eyebrow": "CV / portfolio · conception mecanique",
+        "titleLine1": "Ingenieur conception mecanique",
+        "titleLine2": "de l'idee au prototype valide.",
+        "subtitle": "Ingenieur en conception mecanique, oriente architecture produit, simulation numerique et validation de solutions techniques en environnement exigeant.",
+        "quickFocus": "Conception mecanique · Simulation · Validation",
+        "panelTitle": "Concevoir des systemes mecaniques robustes et industrialisables.",
+        "panelSummary": "Approche structuree en CAO, dimensionnement et iteration prototype pour securiser les performances produit.",
+        "footerSubtitle": "Profil axe conception mecanique: modelisation 3D, calculs, simulation et validation.",
+        "pageTitle": "Mohammed El Badaouy - Ingenieur Conception Mecanique",
+        "pageDescription": "Profil ingenieur conception mecanique et simulation."
+      },
+      "projects": [
+        {
+          "delay": 100,
+          "alignment": "left",
+          "logo": "Img/logo%20ensam%20.png",
+          "institution": "ENSAM Rabat",
+          "period": "avr. 2022 - mai 2022",
+          "title": "Etude numerique de flexion des poutres composites en I",
+          "intro": "Etude numerique de la flexion des poutres composites en I.",
+          "outro": "Conception et validation numerique d'une structure composite en I.",
+          "competences": [
+            "CATIA",
+            "Calcul de structures",
+            "Simulation",
+            "Mecanique des materiaux"
+          ],
+          "gallery": [
+            "Img/logo%20ensam%20.png",
+            "Img/DS-CATIA-Logo.png",
+            "Img/ANSYS_logo.png"
+          ]
+        },
+        {
+          "delay": 200,
+          "alignment": "up",
+          "logo": "Img/logo%20ensam%20.png",
+          "institution": "ENSAM Rabat",
+          "period": "jan. 2023 - juil. 2023",
+          "title": "Conception, modelisation et simulation des composants d'avion",
+          "intro": "Conception et simulation de composants aeronautiques.",
+          "outro": "Travail de modelisation et de simulation de composants aeronautiques.",
+          "competences": [
+            "CATIA",
+            "CAO",
+            "Simulation",
+            "Analyse structurelle"
+          ],
+          "gallery": [
+            "Img/logo%20ensam%20.png",
+            "Img/DS-CATIA-Logo.png",
+            "Img/Logo-dassault-systemes-3ds.svg"
+          ]
+        },
+        {
+          "delay": 300,
+          "alignment": "right",
+          "logo": "Img/logo%20ensam%20.png",
+          "institution": "ENSAM Rabat",
+          "period": "fev. 2022 - juin 2022",
+          "title": "Etude et realisation d'un accessoire de fixation",
+          "intro": "Conception et realisation d'un accessoire de fixation pour tour parallele.",
+          "outro": "Conception CAO, realisation et mise au point du dispositif.",
+          "competences": [
+            "CAO",
+            "Realisation",
+            "Usinage",
+            "Prototypage"
+          ],
+          "gallery": [
+            "Img/logo%20ensam%20.png",
+            "Img/SOLIDWORKS%20DESIGN%20-%20PROFESSIONAL.png",
+            "Img/PROFESSIONAL%20-%20DRAWING%20TOOLS.png"
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "delay": 100,
+          "alignment": "left",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"skill-column__icon\"><path d=\"m21 16-9 5-9-5V8l9-5 9 5Z\"/><path d=\"m3.27 6.96 8.73 5.05 8.73-5.05\"/><path d=\"M12 22V12\"/></svg>",
+          "eyebrow": "Domaine",
+          "title": "Conception Mecanique et Simulation",
+          "tags": [
+            "CATIA V5",
+            "SolidWorks",
+            "3DEXPERIENCE",
+            "RDM",
+            "ANSYS",
+            "ABAQUS"
+          ]
+        },
+        {
+          "delay": 300,
+          "alignment": "right",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"skill-column__icon\"><polygon points=\"12 2 2 7 12 12 22 7 12 2\"/><polyline points=\"2 12 12 17 22 12\"/><polyline points=\"2 17 12 22 22 17\"/></svg>",
+          "eyebrow": "Atelier",
+          "title": "Procedes de Fabrication",
+          "tags": [
+            "Fabrication additive",
+            "Prototypage rapide",
+            "Usinage CNC",
+            "Assemblage aeronautique"
+          ]
+        }
+      ],
+      "softwareLogos": [
+        {
+          "delay": 100,
+          "name": "CATIA",
+          "logo": "Img/DS-CATIA-Logo.png",
+          "alt": "CATIA",
+          "accent": "#1a3a5c"
+        },
+        {
+          "delay": 140,
+          "name": "SolidWorks",
+          "logo": "Img/solidworks logo.png",
+          "alt": "SolidWorks",
+          "accent": "#c62828"
+        },
+        {
+          "delay": 180,
+          "name": "ANSYS",
+          "logo": "Img/ANSYS_logo.png",
+          "alt": "ANSYS",
+          "accent": "#005a8f"
+        },
+        {
+          "delay": 220,
+          "name": "ABAQUS",
+          "logo": "Img/abaqus.png",
+          "alt": "ABAQUS",
+          "accent": "#6d3dc7"
+        }
+      ]
+    },
+    "conception_generale": {
+      "hero": {
+        "eyebrow": "CV / portfolio · ingenierie generale",
+        "titleLine1": "Ingenieur conception generale",
+        "titleLine2": "vision systeme, execution terrain.",
+        "subtitle": "Profil polyvalent en conception, industrialisation et pilotage technique, capable de relier le besoin metier aux livrables industriels.",
+        "quickFocus": "Conception · Methodes · Projets techniques",
+        "panelTitle": "Transformer les besoins techniques en solutions concretes.",
+        "panelSummary": "Combinaison de conception mecanique, methodes industrielles et coordination projet pour livrer avec qualite et delais.",
+        "footerSubtitle": "Profil conception generale: approche transversale entre bureau d'etudes, methodes et industrialisation.",
+        "pageTitle": "Mohammed El Badaouy - Ingenieur Conception Generale",
+        "pageDescription": "Profil ingenieur conception generale et pilotage technique."
+      },
+      "projects": [
+        {
+          "delay": 100,
+          "alignment": "left",
+          "logo": "Img/logo%20ensam%20.png",
+          "institution": "ENSAM Rabat",
+          "period": "avr. 2022 - mai 2022",
+          "title": "Etude numerique de flexion des poutres composites en I",
+          "intro": "Etude numerique de la flexion des poutres composites en I.",
+          "outro": "Conception et validation numerique d'une structure composite en I.",
+          "competences": [
+            "CATIA",
+            "Calcul de structures",
+            "Simulation",
+            "Mecanique des materiaux"
+          ],
+          "gallery": [
+            "Img/logo%20ensam%20.png",
+            "Img/DS-CATIA-Logo.png",
+            "Img/ANSYS_logo.png"
+          ]
+        },
+        {
+          "delay": 200,
+          "alignment": "up",
+          "logo": "Img/logo%20ensam%20.png",
+          "institution": "ENSAM Rabat",
+          "period": "jan. 2023 - juil. 2023",
+          "title": "Conception, modelisation et simulation des composants d'avion",
+          "intro": "Conception et simulation de composants aeronautiques.",
+          "outro": "Travail de modelisation et de simulation de composants aeronautiques.",
+          "competences": [
+            "CATIA",
+            "CAO",
+            "Simulation",
+            "Analyse structurelle"
+          ],
+          "gallery": [
+            "Img/logo%20ensam%20.png",
+            "Img/DS-CATIA-Logo.png",
+            "Img/Logo-dassault-systemes-3ds.svg"
+          ]
+        },
+        {
+          "delay": 300,
+          "alignment": "right",
+          "logo": "Img/logo%20ensam%20.png",
+          "institution": "ENSAM Rabat",
+          "period": "fev. 2022 - juin 2022",
+          "title": "Etude et realisation d'un accessoire de fixation",
+          "intro": "Conception et realisation d'un accessoire de fixation pour tour parallele.",
+          "outro": "Conception CAO, realisation et mise au point du dispositif.",
+          "competences": [
+            "CAO",
+            "Realisation",
+            "Usinage",
+            "Prototypage"
+          ],
+          "gallery": [
+            "Img/logo%20ensam%20.png",
+            "Img/SOLIDWORKS%20DESIGN%20-%20PROFESSIONAL.png",
+            "Img/PROFESSIONAL%20-%20DRAWING%20TOOLS.png"
+          ]
+        },
+        {
+          "delay": 400,
+          "alignment": "left",
+          "logo": "Img/fsts%20logo.png",
+          "institution": "FST Settat",
+          "period": "mars 2021",
+          "title": "Conception et automatisation d'un broyeur traditionnel",
+          "intro": "Conception mecanique et automatisation d'un broyeur.",
+          "outro": "Integration d'une approche mecanique et automatisee sur prototype.",
+          "competences": [
+            "CAO",
+            "Automatisation",
+            "SolidWorks",
+            "Arduino"
+          ],
+          "gallery": [
+            "Img/fsts%20logo.png",
+            "Img/Arduino.svg",
+            "Img/SOLIDWORKS%20DESIGN%20-%20ASSOCIATE.png"
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "delay": 100,
+          "alignment": "left",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"skill-column__icon\"><path d=\"m21 16-9 5-9-5V8l9-5 9 5Z\"/><path d=\"m3.27 6.96 8.73 5.05 8.73-5.05\"/><path d=\"M12 22V12\"/></svg>",
+          "eyebrow": "Domaine",
+          "title": "Conception Mecanique et Simulation",
+          "tags": [
+            "CATIA V5",
+            "SolidWorks",
+            "3DEXPERIENCE",
+            "RDM",
+            "ANSYS",
+            "ABAQUS"
+          ]
+        },
+        {
+          "delay": 200,
+          "alignment": "up",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"skill-column__icon\"><path d=\"M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z\"/><path d=\"M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9c.26-.54.83-.93 1.51-1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09c-.68 0-1.25.39-1.51 1Z\"/></svg>",
+          "eyebrow": "Expertise",
+          "title": "Industrialisation et Methodes",
+          "tags": [
+            "AMDEC",
+            "DMAIC",
+            "Lean",
+            "5S",
+            "QRQC",
+            "8D"
+          ]
+        },
+        {
+          "delay": 300,
+          "alignment": "right",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"skill-column__icon\"><polygon points=\"12 2 2 7 12 12 22 7 12 2\"/><polyline points=\"2 12 12 17 22 12\"/><polyline points=\"2 17 12 22 22 17\"/></svg>",
+          "eyebrow": "Atelier",
+          "title": "Procedes de Fabrication",
+          "tags": [
+            "Fabrication additive",
+            "Prototypage rapide",
+            "Usinage CNC",
+            "Assemblage aeronautique"
+          ]
+        }
+      ],
+      "softwareLogos": [
+        {
+          "delay": 100,
+          "name": "CATIA",
+          "logo": "Img/DS-CATIA-Logo.png",
+          "alt": "CATIA",
+          "accent": "#1a3a5c"
+        },
+        {
+          "delay": 140,
+          "name": "SolidWorks",
+          "logo": "Img/solidworks logo.png",
+          "alt": "SolidWorks",
+          "accent": "#c62828"
+        },
+        {
+          "delay": 180,
+          "name": "ANSYS",
+          "logo": "Img/ANSYS_logo.png",
+          "alt": "ANSYS",
+          "accent": "#005a8f"
+        },
+        {
+          "delay": 220,
+          "name": "ABAQUS",
+          "logo": "Img/abaqus.png",
+          "alt": "ABAQUS",
+          "accent": "#6d3dc7"
+        },
+        {
+          "delay": 260,
+          "name": "Excel",
+          "logo": "Img/EXCEL.svg",
+          "alt": "Excel",
+          "accent": "#107c41"
+        },
+        {
+          "delay": 300,
+          "name": "Word",
+          "logo": "Img/word.svg",
+          "alt": "Word",
+          "accent": "#185abd"
+        },
+        {
+          "delay": 340,
+          "name": "Power Point",
+          "logo": "Img/PowerPoint.svg",
+          "alt": "PowerPoint",
+          "accent": "#d24726"
+        },
+        {
+          "delay": 380,
+          "name": "SAP",
+          "logo": "Img/SAP.svg",
+          "alt": "SAP",
+          "accent": "#0a6ed1"
+        }
+      ]
+    }
+  },
+  "projects": [
+    {
+      "delay": 100,
+      "alignment": "left",
+      "logo": "Img/logo%20ensam%20.png",
+      "institution": "ENSAM Rabat",
+      "period": "avr. 2022 - mai 2022",
+      "title": "Etude numerique de flexion des poutres composites en I",
+      "intro": "Etude numerique de la flexion des poutres composites en I.",
+      "outro": "Conception et validation numerique d'une structure composite en I.",
+      "competences": [
+        "CATIA",
+        "Calcul de structures",
+        "Simulation",
+        "Mecanique des materiaux"
+      ],
+      "gallery": [
+        "Img/logo%20ensam%20.png",
+        "Img/DS-CATIA-Logo.png",
+        "Img/ANSYS_logo.png"
+      ]
+    },
+    {
+      "delay": 200,
+      "alignment": "up",
+      "logo": "Img/logo%20ensam%20.png",
+      "institution": "ENSAM Rabat",
+      "period": "jan. 2023 - juil. 2023",
+      "title": "Conception, modelisation et simulation des composants d'avion",
+      "intro": "Conception et simulation de composants aeronautiques.",
+      "outro": "Travail de modelisation et de simulation de composants aeronautiques.",
+      "competences": [
+        "CATIA",
+        "CAO",
+        "Simulation",
+        "Analyse structurelle"
+      ],
+      "gallery": [
+        "Img/logo%20ensam%20.png",
+        "Img/DS-CATIA-Logo.png",
+        "Img/Logo-dassault-systemes-3ds.svg"
+      ]
+    },
+    {
+      "delay": 300,
+      "alignment": "right",
+      "logo": "Img/logo%20ensam%20.png",
+      "institution": "ENSAM Rabat",
+      "period": "fev. 2022 - juin 2022",
+      "title": "Etude et realisation d'un accessoire de fixation",
+      "intro": "Conception et realisation d'un accessoire de fixation pour tour parallele.",
+      "outro": "Conception CAO, realisation et mise au point du dispositif.",
+      "competences": [
+        "CAO",
+        "Realisation",
+        "Usinage",
+        "Prototypage"
+      ],
+      "gallery": [
+        "Img/logo%20ensam%20.png",
+        "Img/SOLIDWORKS%20DESIGN%20-%20PROFESSIONAL.png",
+        "Img/PROFESSIONAL%20-%20DRAWING%20TOOLS.png"
+      ]
+    },
+    {
+      "delay": 400,
+      "alignment": "left",
+      "logo": "Img/fsts%20logo.png",
+      "institution": "FST Settat",
+      "period": "mars 2021",
+      "title": "Conception et automatisation d'un broyeur traditionnel",
+      "intro": "Conception mecanique et automatisation d'un broyeur.",
+      "outro": "Integration d'une approche mecanique et automatisee sur prototype.",
+      "competences": [
+        "CAO",
+        "Automatisation",
+        "SolidWorks",
+        "Arduino"
+      ],
+      "gallery": [
+        "Img/fsts%20logo.png",
+        "Img/Arduino.svg",
+        "Img/SOLIDWORKS%20DESIGN%20-%20ASSOCIATE.png"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "delay": 100,
+      "alignment": "left",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"skill-column__icon\"><path d=\"m21 16-9 5-9-5V8l9-5 9 5Z\"/><path d=\"m3.27 6.96 8.73 5.05 8.73-5.05\"/><path d=\"M12 22V12\"/></svg>",
+      "eyebrow": "Domaine",
+      "title": "Conception Mecanique et Simulation",
+      "tags": [
+        "CATIA V5",
+        "SolidWorks",
+        "3DEXPERIENCE",
+        "RDM",
+        "ANSYS",
+        "ABAQUS"
+      ]
+    },
+    {
+      "delay": 200,
+      "alignment": "up",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"skill-column__icon\"><path d=\"M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z\"/><path d=\"M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9c.26-.54.83-.93 1.51-1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09c-.68 0-1.25.39-1.51 1Z\"/></svg>",
+      "eyebrow": "Expertise",
+      "title": "Industrialisation et Methodes",
+      "tags": [
+        "AMDEC",
+        "DMAIC",
+        "Lean",
+        "5S",
+        "QRQC",
+        "8D"
+      ]
+    },
+    {
+      "delay": 300,
+      "alignment": "right",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"skill-column__icon\"><polygon points=\"12 2 2 7 12 12 22 7 12 2\"/><polyline points=\"2 12 12 17 22 12\"/><polyline points=\"2 17 12 22 22 17\"/></svg>",
+      "eyebrow": "Atelier",
+      "title": "Procedes de Fabrication",
+      "tags": [
+        "Fabrication additive",
+        "Prototypage rapide",
+        "Usinage CNC",
+        "Assemblage aeronautique"
+      ]
+    }
+  ],
+  "softwareLogos": [
+    {
+      "delay": 100,
+      "name": "CATIA",
+      "logo": "Img/DS-CATIA-Logo.png",
+      "alt": "CATIA",
+      "accent": "#1a3a5c"
+    },
+    {
+      "delay": 140,
+      "name": "SolidWorks",
+      "logo": "Img/solidworks logo.png",
+      "alt": "SolidWorks",
+      "accent": "#c62828"
+    },
+    {
+      "delay": 180,
+      "name": "ANSYS",
+      "logo": "Img/ANSYS_logo.png",
+      "alt": "ANSYS",
+      "accent": "#005a8f"
+    },
+    {
+      "delay": 220,
+      "name": "ABAQUS",
+      "logo": "Img/abaqus.png",
+      "alt": "ABAQUS",
+      "accent": "#6d3dc7"
+    },
+    {
+      "delay": 260,
+      "name": "Excel",
+      "logo": "Img/EXCEL.svg",
+      "alt": "Excel",
+      "accent": "#107c41"
+    },
+    {
+      "delay": 300,
+      "name": "Word",
+      "logo": "Img/word.svg",
+      "alt": "Word",
+      "accent": "#185abd"
+    },
+    {
+      "delay": 340,
+      "name": "Power Point",
+      "logo": "Img/PowerPoint.svg",
+      "alt": "PowerPoint",
+      "accent": "#d24726"
+    },
+    {
+      "delay": 380,
+      "name": "SAP",
+      "logo": "Img/SAP.svg",
+      "alt": "SAP",
+      "accent": "#0a6ed1"
     }
   ]
 }

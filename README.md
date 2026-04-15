@@ -1,29 +1,33 @@
 # Portfolio CV
 
-Site CV / portfolio éditorial pour Mohammed El Badaouy, pensé pour une lecture rapide, un rendu premium et une mise en ligne simple.
+Site unique avec page d'accueil + page CV, pensé pour garder une forme visuelle stable et faire varier le contenu selon 3 profils.
 
 ## Objectif
 
-Présenter un profil d’ingénieur méthodes et industrialisation avec une direction visuelle sobre, inspirée d’un site éditorial, tout en gardant une maintenance minimale dans VS Code.
+- Garder un seul site.
+- Garder la forme actuelle du CV.
+- Basculer entre 3 versions de contenu CV via `activeProfile`.
+- Déployer gratuitement via GitHub + Vercel.
 
-## Contenu actuel
+## Architecture actuelle
 
-- Hero avec présentation, CTA et téléchargement du CV PDF
-- Section à propos
-- Parcours professionnel
-- Parcours scolaire
-- Projets sélectionnés
-- Compétences par usage
-- Certifications
-- Bloc contact et footer de conversion
-- Navigation mobile et animations légères au scroll
+- `index.html`: page d'accueil (2 boutons: Portfolio et CV)
+- `cv.html`: page CV complète avec la forme historique
+- `data.json`: source de données unique avec 3 profils et un profil actif
+- `main.js`: rendu dynamique du CV selon `activeProfile`
+- `styles.css`: identité visuelle + styles de la page d'accueil
 
-## Fichiers principaux
+## Profils CV disponibles
 
-- `index.html` pour la structure et le contenu
-- `styles.css` pour toute l’identité visuelle
-- `main.js` pour le menu mobile, les animations et les compteurs
-- `Img/` pour les logos, badges et la photo de profil
+- `methodes_indus`
+- `conception_mecanique`
+- `conception_generale`
+
+Le profil public affiché est défini par:
+
+```json
+"activeProfile": "methodes_indus"
+```
 
 ## Lancer en local
 
@@ -33,15 +37,33 @@ Tu peux ouvrir `index.html` directement dans le navigateur, ou lancer un serveur
 npx serve .
 ```
 
-## Déploiement conseillé
+## Switch admin (simple et gratuit)
 
-La configuration la plus simple avec un domaine `.me` chez Namecheap est:
+Méthode retenue: switch admin via GitHub.
 
-1. Déposer le projet sur GitHub.
-2. Connecter le repo à Vercel ou Netlify.
-3. Pointer le domaine Namecheap vers l’hébergeur choisi.
+1. Ouvrir `data.json` dans GitHub ou VS Code.
+2. Changer uniquement la valeur de `activeProfile`.
+3. Commit + push sur une branche.
+4. Vérifier l'URL Preview Vercel.
+5. Merger sur `main` pour publier.
 
-Si tu veux rester sur GitHub pour le déploiement, utilise GitHub Pages:
+Exemple:
+
+```json
+"activeProfile": "conception_mecanique"
+```
+
+Cette méthode évite tout backend et reste compatible 100% gratuit.
+
+## Déploiement conseillé (GitHub + Vercel)
+
+1. Pousser le projet sur GitHub.
+2. Importer le repo sur Vercel.
+3. Laisser Vercel détecter le site statique.
+4. Activer les previews de branche (PR).
+5. Publier automatiquement depuis `main`.
+
+Si tu veux rester sur GitHub uniquement, utilise GitHub Pages:
 
 1. Pousse le projet sur un dépôt GitHub public.
 2. Va dans `Settings` > `Pages`.
@@ -68,6 +90,6 @@ Si tu utilises un sous-domaine comme `cv.tondomaine.me`, crée plutôt un `CNAME
 
 ### Suite logique
 
-- remplacer les liens `LinkedIn`, `GitHub` et portfolio par les URLs finales
-- vérifier le CV PDF associé au bouton de téléchargement
-- ajouter éventuellement une page projet détaillée ou un formulaire de contact
+- ajuster les contenus finaux des 3 profils dans `data.json`
+- garder la procédure `activeProfile` pour publication rapide
+- ajouter plus tard de nouvelles pages sans casser l'existant

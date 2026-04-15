@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>404 - Page non trouvee</title>
+    <style>
+      :root {
+        --bg-1: #040906;
+        --bg-2: #07110b;
+        --green: #6bff9f;
+        --green-soft: #b8ffd2;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        font-family: Consolas, "JetBrains Mono", monospace;
+        color: var(--green-soft);
+        background:
+          radial-gradient(circle at 20% 12%, rgba(76, 240, 145, 0.16), transparent 34%),
+          linear-gradient(180deg, var(--bg-1), var(--bg-2));
+        overflow: hidden;
+      }
+
+      .rain {
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        opacity: 0.55;
+      }
+
+      .col {
+        position: absolute;
+        top: -140%;
+        left: var(--left);
+        width: 10%;
+        writing-mode: vertical-rl;
+        color: rgba(108, 255, 158, 0.8);
+        text-shadow: 0 0 10px rgba(76, 240, 145, 0.35);
+        letter-spacing: 0.22em;
+        font-size: 0.9rem;
+        animation: rain var(--dur) linear infinite;
+        animation-delay: var(--delay);
+      }
+
+      @keyframes rain {
+        from { transform: translateY(-6%); }
+        to { transform: translateY(175%); }
+      }
+
+      .card {
+        position: relative;
+        z-index: 2;
+        width: min(760px, calc(100vw - 2rem));
+        padding: 2.2rem 1.2rem;
+        border: 1px solid rgba(107, 255, 159, 0.34);
+        border-radius: 20px;
+        background: rgba(6, 16, 10, 0.82);
+        text-align: center;
+      }
+
+      .label {
+        margin: 0;
+        color: #8efab8;
+        letter-spacing: 0.2em;
+        font-size: 0.75rem;
+      }
+
+      .typing {
+        margin: 0.6rem 0 0;
+        font-size: clamp(4rem, 15vw, 9rem);
+        line-height: 0.9;
+        color: var(--green);
+        text-shadow: 0 0 18px rgba(79, 228, 136, 0.35);
+        border-right: 3px solid rgba(122, 255, 170, 0.85);
+        width: 3ch;
+        max-width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        margin-left: auto;
+        margin-right: auto;
+        animation: typing 1.6s steps(3, end) both, caret 0.8s step-end infinite;
+      }
+
+      .msg {
+        margin: 0.9rem 0 0;
+        font-size: 1rem;
+      }
+
+      .actions {
+        margin-top: 1.4rem;
+        display: flex;
+        justify-content: center;
+        gap: 0.8rem;
+        flex-wrap: wrap;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 0.75rem 1.1rem;
+        border-radius: 999px;
+        border: 1px solid rgba(103, 237, 152, 0.4);
+        text-decoration: none;
+        color: #e7ffef;
+        font-weight: 700;
+      }
+
+      .btn.primary {
+        background: linear-gradient(135deg, #4fe488, #2dbd65);
+        color: #052a13;
+      }
+
+      @keyframes typing {
+        from { width: 0; }
+        to { width: 3ch; }
+      }
+
+      @keyframes caret {
+        0%,49% { border-right-color: rgba(122, 255, 170, 0.85); }
+        50%,100% { border-right-color: transparent; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="rain" aria-hidden="true">
+      <span class="col" style="--left:2%;--dur:10.1s;--delay:-1.4s;">A1X9B2Q8V5L3K0N7</span>
+      <span class="col" style="--left:18%;--dur:11.3s;--delay:-2.2s;">Q6V2M8K1X5N3B7L4</span>
+      <span class="col" style="--left:34%;--dur:9.8s;--delay:-3.1s;">Z4N0C7B2L9Q5V1X8</span>
+      <span class="col" style="--left:50%;--dur:12.1s;--delay:-1.7s;">M3K9X4Q0V7L2B6N5</span>
+      <span class="col" style="--left:66%;--dur:10.7s;--delay:-2.8s;">V8L1B5N2Q9X6K3M0</span>
+      <span class="col" style="--left:82%;--dur:11.9s;--delay:-0.9s;">R7Q2X8M4L0N5B1K6</span>
+    </div>
+
+    <section class="card">
+      <p class="label">TERMINAL MATRIX</p>
+      <h1 class="typing">404</h1>
+      <p class="msg">Page non trouvee.</p>
+      <div class="actions">
+        <a class="btn primary" href="https://badaouy.me">Retour accueil</a>
+        <a class="btn" href="https://cv.badaouy.me">Voir le CV</a>
+      </div>
+    </section>
+  </body>
+</html>

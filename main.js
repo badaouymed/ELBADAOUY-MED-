@@ -85,6 +85,76 @@ function toNumber(value, fallback = 0) {
   return Number.isFinite(parsed) ? parsed : fallback;
 }
 
+function resolveProfileData(data) {
+  const profiles = data && typeof data === "object" ? data.profiles : null;
+  const profileKeys = profiles && typeof profiles === "object" ? Object.keys(profiles) : [];
+  const fallbackKey = profileKeys[0] || "methodes_indus";
+  const activeProfile = profileKeys.includes(data?.activeProfile) ? data.activeProfile : fallbackKey;
+  const selectedProfile = profiles?.[activeProfile] || {};
+
+  return {
+    ...data,
+    activeProfile,
+    activeProfileLabel: data?.profileLabels?.[activeProfile] || activeProfile,
+    hero: selectedProfile.hero || {},
+    projects: Array.isArray(selectedProfile.projects) ? selectedProfile.projects : data.projects,
+    skills: Array.isArray(selectedProfile.skills) ? selectedProfile.skills : data.skills,
+    softwareLogos: Array.isArray(selectedProfile.softwareLogos) ? selectedProfile.softwareLogos : data.softwareLogos,
+  };
+}
+
+function setTextIfExists(id, value) {
+  const element = document.getElementById(id);
+  if (element && value) {
+    element.textContent = value;
+  }
+}
+
+function applyProfileHero(data) {
+  const hero = data.hero || {};
+
+  setTextIfExists("announcement-text", hero.announcement);
+  setTextIfExists("hero-eyebrow", hero.eyebrow);
+  setTextIfExists("hero-title-line-1", hero.titleLine1);
+  setTextIfExists("hero-title-line-2", hero.titleLine2);
+  setTextIfExists("hero-subtitle", hero.subtitle);
+  setTextIfExists("quickfocus-text", hero.quickFocus);
+  setTextIfExists("panel-title", hero.panelTitle);
+  setTextIfExists("panel-summary", hero.panelSummary);
+  setTextIfExists("footer-subtitle", hero.footerSubtitle);
+
+  const profilePill = document.getElementById("active-profile-pill");
+  if (profilePill) {
+    profilePill.textContent = `Profil: ${data.activeProfileLabel || "CV"}`;
+  }
+
+  const firstCounter = document.querySelector(".statrow .counter[data-count]");
+  if (firstCounter && Array.isArray(data.projects)) {
+    firstCounter.dataset.count = String(data.projects.length);
+    firstCounter.textContent = "0";
+    firstCounter.dataset.animated = "";
+  }
+
+  if (hero.pageTitle) {
+    document.title = hero.pageTitle;
+  }
+
+  const metaDescription = document.querySelector('meta[name="description"]');
+  if (metaDescription && hero.pageDescription) {
+    metaDescription.setAttribute("content", hero.pageDescription);
+  }
+
+  const ogTitle = document.querySelector('meta[property="og:title"]');
+  if (ogTitle && hero.pageTitle) {
+    ogTitle.setAttribute("content", hero.pageTitle);
+  }
+
+  const ogDescription = document.querySelector('meta[property="og:description"]');
+  if (ogDescription && hero.pageDescription) {
+    ogDescription.setAttribute("content", hero.pageDescription);
+  }
+}
+
 function toggleNav(open) {
   if (!nav || !menuButton) {
     return;
@@ -589,7 +659,9 @@ async function loadDataAndInitialize() {
   try {
     const response = await fetch("data.json");
     if (response.ok) {
-      const data = await response.json();
+      const rawData = await response.json();
+      const data = resolveProfileData(rawData);
+      applyProfileHero(data);
       buildHTML(data);
     } else {
       console.error("Failed to load data.json");

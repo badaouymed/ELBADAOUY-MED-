@@ -1,0 +1,44 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "cv.badaouy.me"
+        }
+      ],
+      "destination": "/cv.html"
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "pf.badaouy.me"
+        }
+      ],
+      "destination": "/construction.html"
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "pf.badaouy.me"
+        }
+      ],
+      "destination": "/construction.html"
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "cv.badaouy.me"
+        }
+      ],
+      "destination": "/cv.html"
+    }
+  ]
+}
