@@ -1,24 +1,48 @@
 {
-  "rewrites": [
+  "redirects": [
     {
-      "source": "/:path*",
+      "source": "/",
       "has": [
         {
           "type": "host",
           "value": "cv.badaouy.me"
         }
       ],
-      "destination": "/cv.html"
+      "destination": "/cv.html",
+      "permanent": true
     },
     {
-      "source": "/:path*",
+      "source": "/index.html",
+      "has": [
+        {
+          "type": "host",
+          "value": "cv.badaouy.me"
+        }
+      ],
+      "destination": "/cv.html",
+      "permanent": true
+    },
+    {
+      "source": "/",
       "has": [
         {
           "type": "host",
           "value": "pf.badaouy.me"
         }
       ],
-      "destination": "/construction.html"
+      "destination": "/construction.html",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "has": [
+        {
+          "type": "host",
+          "value": "pf.badaouy.me"
+        }
+      ],
+      "destination": "/construction.html",
+      "permanent": true
     }
   ]
 }
